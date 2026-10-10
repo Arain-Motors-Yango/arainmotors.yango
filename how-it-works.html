@@ -44,6 +44,29 @@
     @media(max-width:850px){.brand-logo{width:160px;height:50px}.yango-logo{width:46px;height:46px}.yango-brand{font-size:1rem}.brand{gap:9px}.yango-brand{gap:6px;font-size:.9rem}.yango-logo{width:35px;height:35px}.hero-grid{grid-template-columns:1fr;gap:15px}.hero{padding-top:55px}.visual{min-height:350px}.orbit{width:310px;height:310px}.benefits,.steps{grid-template-columns:1fr 1fr}.join-grid{grid-template-columns:1fr;gap:30px}.join-aside{position:static}.navlinks{gap:15px}.join-aside h2{max-width:600px}}
     @media(max-width:620px){.nav{min-height:66px}.brand-logo{width:112px;height:38px}.brand{gap:7px}.brand-divider{height:28px}.yango-brand{gap:5px;font-size:.8rem}.yango-logo{width:36px;height:36px}.wrap{width:min(100% - 30px,1160px)}.nav{height:66px}.menu-btn{display:block}.navlinks{display:none;position:absolute;top:65px;left:0;right:0;background:white;padding:18px 20px 22px;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch}.navlinks.open{display:flex}.navlinks .btn{text-align:center}.hero{padding:45px 0 40px}h1{font-size:clamp(2.8rem,14vw,4.5rem)}.visual{min-height:320px}.driver-card{padding:20px;max-width:330px}.driver-illustration{height:155px}.car{transform:scale(.82)}section{padding:62px 0}.benefits,.steps,.faq-grid{grid-template-columns:1fr}.form-card{padding:21px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.contact-inner{align-items:flex-start;flex-direction:column}.trustline{gap:12px}.footer-top{flex-direction:column}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  
+/* Mobile conversion CTA: always visible without covering page content */
+.mobile-join-cta{display:none}
+@media(max-width:620px){
+  body{padding-bottom:calc(90px + env(safe-area-inset-bottom))}
+  html{scroll-padding-bottom:105px}
+  .mobile-join-cta{
+    display:flex;position:fixed;left:14px;right:14px;
+    bottom:calc(12px + env(safe-area-inset-bottom));z-index:1001;
+    min-height:54px;align-items:center;justify-content:center;gap:11px;
+    padding:13px 20px;border:1px solid #ffffff3b;border-radius:999px;
+    background:linear-gradient(110deg,#e60012,#b90010);color:#fff;
+    font-size:1rem;font-weight:900;letter-spacing:-.01em;text-decoration:none;
+    box-shadow:0 10px 30px #b9001048;
+    transition:transform .2s,box-shadow .2s
+  }
+  .mobile-join-cta:hover{transform:translateY(-2px);box-shadow:0 14px 34px #b9001052}
+  .mobile-join-cta:active{transform:scale(.985)}
+  .mobile-join-cta:focus-visible{outline:3px solid #171717;outline-offset:3px}
+  .mobile-join-cta .join-arrow{font-size:1.15rem;line-height:1}
+}
+@media(prefers-reduced-motion:reduce){.mobile-join-cta{transition:none!important}}
+
   </style>
 </head>
 <body>
@@ -75,5 +98,6 @@ const year=document.getElementById('year');if(year)year.textContent=new Date().g
 const riderForm=document.getElementById('riderForm');
 if(riderForm)riderForm.addEventListener('submit',async function(e){e.preventDefault();if(!this.reportValidity())return;const form=this,submitBtn=document.getElementById('submitBtn'),status=document.getElementById('formStatus'),originalLabel=submitBtn.innerHTML;status.style.display='block';status.textContent='Sending your application securely…';submitBtn.disabled=true;submitBtn.style.opacity='.65';submitBtn.setAttribute('aria-busy','true');try{const response=await fetch('https://api.web3forms.com/submit',{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}});const result=await response.json();if(response.ok&&result.success){status.textContent='Thank you! Your enquiry has been sent successfully. Arain Motors can now review your details.';status.style.background='#e7f7e9';form.reset();}else{throw new Error(result.message||'The form service could not accept your submission.');}}catch(error){status.textContent='We could not send your enquiry right now. Please try again or email arainmotors.yango@gmail.com directly.';status.style.background='#fff0e8';}finally{submitBtn.disabled=false;submitBtn.style.opacity='';submitBtn.removeAttribute('aria-busy');submitBtn.innerHTML=originalLabel;}});
 </script>
+<a class="mobile-join-cta" href="join.html" aria-label="Join as a rider — open rider application"><span class="join-arrow" aria-hidden="true">↗</span><span>Join as a rider</span><span class="join-arrow" aria-hidden="true">→</span></a>
 </body>
 </html>
