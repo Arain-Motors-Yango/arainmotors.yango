@@ -71,6 +71,71 @@
   @media(min-width:1001px){.navlinks{gap:13px;font-size:.84rem}.navlinks>a:not(.btn){white-space:nowrap}}
   
   @media(max-width:850px){.nav{position:relative}.menu-btn{display:block;flex-shrink:0}.navlinks{display:none;position:absolute;top:calc(100% - 1px);left:0;right:0;z-index:100;background:#fff;padding:16px 20px 22px;border-bottom:1px solid #f0dfe0;box-shadow:0 20px 25px #2c000708;flex-direction:column;align-items:stretch;gap:4px;font-size:.95rem}.navlinks.open{display:flex}.navlinks>a{display:block!important;padding:10px 6px}.navlinks>a:after{display:none}.navlinks .btn{margin-top:8px;text-align:center}}
+
+    /* Extra motion polish — Join as a Rider page */
+    #join.soft-section{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(115deg,#fff8f8 0%,#fff 42%,#fff1f2 100%);background-size:180% 180%;animation:joinAurora 16s ease-in-out infinite}
+    #join.soft-section:before,#join.soft-section:after{content:"";position:absolute;z-index:-1;pointer-events:none;border-radius:50%;filter:blur(2px)}
+    #join.soft-section:before{width:330px;height:330px;right:-110px;top:7%;background:radial-gradient(circle,#ffb5bd8a 0%,#ffdfe366 42%,transparent 72%);animation:joinOrbDrift 13s ease-in-out infinite}
+    #join.soft-section:after{width:280px;height:280px;left:-110px;bottom:4%;background:radial-gradient(circle,#ffccd18c 0%,#fff0f188 46%,transparent 72%);animation:joinOrbDrift 16s ease-in-out -5s infinite reverse}
+    #join .join-grid{position:relative;z-index:1}
+    #join .join-aside{animation:joinAsideEnter .85s cubic-bezier(.2,.7,.2,1) both}
+    #join .join-aside .kicker{transform-origin:left center;animation:joinKickerPop .7s .12s cubic-bezier(.2,.8,.2,1) both}
+    #join .join-aside h2{animation:joinTitleEnter .9s .18s cubic-bezier(.2,.7,.2,1) both}
+    #join .join-aside>p{animation:joinTitleEnter .8s .3s both}
+    #join .contact-note{position:relative;overflow:hidden;animation:joinNoteFloat 5s 1.2s ease-in-out infinite,joinTitleEnter .8s .4s both;transition:transform .3s ease,box-shadow .3s ease}
+    #join .contact-note:after{content:"";position:absolute;inset:-60% auto -60% -45%;width:35%;transform:rotate(22deg);background:linear-gradient(90deg,transparent,#ffffffa8,transparent);animation:joinNoteShine 6s 1.8s ease-in-out infinite;pointer-events:none}
+    #join .contact-note:hover{transform:translateY(-4px);box-shadow:0 12px 30px #e6001214}
+    #join .form-card{position:relative;isolation:isolate;animation:joinFormEnter .95s .12s cubic-bezier(.2,.7,.2,1) both,joinFormGlow 6s 1.5s ease-in-out infinite;transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease}
+    #join .form-card:hover{transform:translateY(-4px);border-color:#efb0b5;box-shadow:0 28px 75px #e6001218}
+    #join .form-card h3{animation:joinTitleEnter .7s .25s both}
+    #join .form-card>p{animation:joinTitleEnter .7s .35s both}
+    #join .form-grid>.field{animation:joinFieldEnter .65s cubic-bezier(.2,.7,.2,1) both}
+    #join .form-grid>.field:nth-child(1){animation-delay:.25s}
+    #join .form-grid>.field:nth-child(2){animation-delay:.31s}
+    #join .form-grid>.field:nth-child(3){animation-delay:.37s}
+    #join .form-grid>.field:nth-child(4){animation-delay:.43s}
+    #join .form-grid>.field:nth-child(5){animation-delay:.49s}
+    #join .form-grid>.field:nth-child(6){animation-delay:.55s}
+    #join .form-grid>.field:nth-child(7){animation-delay:.61s}
+    #join .form-grid>.field:nth-child(8){animation-delay:.67s}
+    #join .form-grid>.field:nth-child(9){animation-delay:.73s}
+    #join .form-grid>.field:nth-child(10){animation-delay:.79s}
+    #join .field label{transition:color .25s ease}
+    #join .field:focus-within label{color:var(--red)}
+    #join .field input:not([type=checkbox]),#join .field select,#join .field textarea{transition:border-color .25s ease,box-shadow .25s ease,transform .25s ease,background-color .25s ease}
+    #join .field input:not([type=checkbox]):hover,#join .field select:hover,#join .field textarea:hover{border-color:#e9a1a7;background:#fffdfd}
+    #join .field input:not([type=checkbox]):focus,#join .field select:focus,#join .field textarea:focus{transform:translateY(-1px);box-shadow:0 0 0 4px #e6001215,0 7px 18px #e6001209}
+    #join .form-foot{animation:joinFieldEnter .7s .85s both}
+    #join #submitBtn{position:relative;overflow:hidden;isolation:isolate;animation:joinSubmitPulse 3.6s 1.2s ease-in-out infinite;transition:transform .25s ease,box-shadow .25s ease,background .25s ease}
+    #join #submitBtn:before{content:"";position:absolute;z-index:-1;top:-40%;bottom:-40%;left:-55%;width:34%;transform:skewX(-22deg);background:linear-gradient(90deg,transparent,#ffffff83,transparent);animation:joinButtonShine 4.8s 1.8s ease-in-out infinite}
+    #join #submitBtn:hover{transform:translateY(-4px) scale(1.015)}
+    #join #submitBtn:active{transform:translateY(0) scale(.98)}
+    #join #submitBtn:disabled{animation:none;transform:none}
+    #join .form-foot small{animation:joinTitleEnter .6s 1s both}
+    .navlinks>a:not(.btn){position:relative;transition:color .25s ease,transform .25s ease}
+    .navlinks>a:not(.btn):hover{color:var(--red);transform:translateY(-2px)}
+    .navlinks>a:not(.btn):after{content:"";position:absolute;left:0;right:100%;bottom:-5px;height:2px;background:var(--red);transition:right .25s ease}
+    .navlinks>a:not(.btn):hover:after{right:0}
+    .mobile-join-cta{overflow:hidden;isolation:isolate}
+    .mobile-join-cta:before{content:"";position:absolute;z-index:-1;top:-30%;bottom:-30%;left:-45%;width:30%;transform:skewX(-25deg);background:linear-gradient(90deg,transparent,#ffffff65,transparent);animation:joinButtonShine 4.2s 1s ease-in-out infinite}
+    .mobile-join-cta .join-arrow:first-child{animation:joinArrowNudge 1.8s ease-in-out infinite}
+    @keyframes joinAurora{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+    @keyframes joinOrbDrift{0%,100%{transform:translate3d(0,0,0) scale(1);opacity:.65}50%{transform:translate3d(-28px,22px,0) scale(1.12);opacity:1}}
+    @keyframes joinAsideEnter{from{opacity:0;transform:translate3d(-24px,18px,0)}to{opacity:1;transform:translate3d(0,0,0)}}
+    @keyframes joinKickerPop{from{opacity:0;transform:translateY(10px) scale(.94)}to{opacity:1;transform:translateY(0) scale(1)}}
+    @keyframes joinTitleEnter{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes joinFormEnter{from{opacity:0;transform:translate3d(25px,22px,0) scale(.985)}to{opacity:1;transform:translate3d(0,0,0) scale(1)}}
+    @keyframes joinFieldEnter{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes joinNoteFloat{0%,100%{box-shadow:0 0 0 #e6001200}50%{box-shadow:0 12px 32px #e600120e}}
+    @keyframes joinNoteShine{0%,65%,100%{left:-45%;opacity:0}72%{opacity:1}88%{left:130%;opacity:0}}
+    @keyframes joinFormGlow{0%,100%{box-shadow:0 18px 60px #00000008}50%{box-shadow:0 24px 68px #e6001212}}
+    @keyframes joinSubmitPulse{0%,100%{box-shadow:0 8px 20px #e6001229}50%{box-shadow:0 12px 31px #e6001249}}
+    @keyframes joinButtonShine{0%,64%,100%{left:-45%;opacity:0}70%{opacity:1}87%{left:130%;opacity:0}}
+    @keyframes joinArrowNudge{0%,100%{transform:translate(0,0)}50%{transform:translate(3px,-2px)}}
+    @media(prefers-reduced-motion:reduce){
+      #join.soft-section,#join.soft-section:before,#join.soft-section:after,#join .join-aside,#join .join-aside .kicker,#join .join-aside h2,#join .join-aside>p,#join .contact-note,#join .contact-note:after,#join .form-card,#join .form-card h3,#join .form-card>p,#join .form-grid>.field,#join .form-foot,#join .form-foot small,#join #submitBtn,#join #submitBtn:before,.navlinks>a:not(.btn),.navlinks>a:not(.btn):after,.mobile-join-cta:before,.mobile-join-cta .join-arrow:first-child{animation:none!important;transition:none!important}
+    }
+
   </style>
 
 <style id="site-whatsapp-widget">
