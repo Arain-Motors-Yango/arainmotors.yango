@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171717">
+  <meta name="description" content="Araim Motors — learn about rider opportunities and submit your interest in joining our team.">
+  <title>Araim Motors | Move Forward</title>
+  <style>
+    :root{--ink:#171717;--muted:#666;--paper:#fff;--soft:#f6f6f3;--yellow:#ffd429;--line:#e8e8e3;--radius:22px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px;font-weight:850;letter-spacing:-.04em;font-size:1.1rem}.brand-mark{width:40px;height:40px;border-radius:13px;background:var(--yellow);display:grid;place-items:center;font-weight:950;font-size:1.15rem}.navlinks{display:flex;align-items:center;gap:27px;font-size:.92rem;font-weight:650}.navlinks a:hover{opacity:.65}.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;border:0;border-radius:999px;padding:13px 21px;font-weight:800;background:var(--yellow);color:var(--ink);cursor:pointer;transition:transform .2s,background .2s}.btn:hover{transform:translateY(-2px);background:#f3c800}.btn.dark{background:var(--ink);color:white}.menu-btn{display:none;border:1px solid var(--line);background:white;border-radius:12px;padding:9px 12px;font-size:1.1rem}
+    .hero{padding:78px 0 65px;overflow:hidden;background:radial-gradient(ellipse at 85% 35%,#fff1a6 0,transparent 32%),linear-gradient(120deg,#fff 45%,#fbf8e9)}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:52px}.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.77rem;font-weight:850;letter-spacing:.13em;text-transform:uppercase;background:#fff4bd;border-radius:999px;padding:8px 12px}.dot{width:7px;height:7px;background:#171717;border-radius:50%}h1{font-size:clamp(3rem,6vw,5.65rem);letter-spacing:-.075em;line-height:.99;margin:23px 0 22px;max-width:700px}h1 span{background:linear-gradient(transparent 64%,var(--yellow) 64%)}.hero p{font-size:1.13rem;color:#5c5c58;max-width:560px;margin:0 0 29px}.actions{display:flex;gap:12px;flex-wrap:wrap}.trustline{display:flex;gap:22px;flex-wrap:wrap;margin-top:32px;color:#6c6c67;font-size:.85rem;font-weight:650}.trustline span{display:flex;gap:7px;align-items:center}.visual{position:relative;min-height:420px;display:grid;place-items:center}.orbit{position:absolute;width:360px;height:360px;border-radius:50%;border:1px solid #e9d981}.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid #f0e7b7;border-radius:50%;inset:28px}.orbit:after{inset:60px}.driver-card{position:relative;width:min(100%,390px);background:var(--ink);color:white;border-radius:30px;padding:28px;box-shadow:0 30px 70px #29251026;transform:rotate(-3deg)}.driver-top{display:flex;justify-content:space-between;align-items:center}.mini-label{color:#c9c9c3;font-size:.78rem}.badge-yellow{background:var(--yellow);color:var(--ink);padding:7px 11px;border-radius:999px;font-size:.72rem;font-weight:900}.driver-illustration{height:190px;margin:18px 0 12px;border-radius:20px;background:linear-gradient(135deg,#383833,#22221f);display:grid;place-items:center;overflow:hidden}.car{width:240px;height:96px;position:relative}.car-body{position:absolute;left:10px;right:10px;bottom:15px;height:55px;background:var(--yellow);border-radius:25px 40px 16px 16px;transform:skewX(-8deg)}.car-roof{position:absolute;left:70px;top:0;width:115px;height:48px;background:#f8f8f4;border:7px solid var(--yellow);border-bottom:0;border-radius:35px 35px 0 0;transform:skewX(-8deg)}.wheel{position:absolute;bottom:0;width:39px;height:39px;background:#111;border:7px solid #aaa;border-radius:50%;z-index:2}.wheel.one{left:42px}.wheel.two{right:42px}.driver-bottom{display:flex;justify-content:space-between;align-items:end}.driver-bottom strong{font-size:1.18rem}.arrow-bubble{background:var(--yellow);color:var(--ink);width:43px;height:43px;border-radius:50%;display:grid;place-items:center;font-size:1.35rem;font-weight:900}
+    section{padding:82px 0}.section-head{max-width:700px;margin-bottom:34px}.kicker{font-size:.76rem;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:#777}.section-head h2{font-size:clamp(2.15rem,4vw,3.5rem);line-height:1.06;letter-spacing:-.06em;margin:12px 0}.section-head p{color:var(--muted);font-size:1.04rem;margin:0}.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.benefit{border:1px solid var(--line);border-radius:var(--radius);padding:26px;background:white}.iconbox{width:49px;height:49px;display:grid;place-items:center;border-radius:15px;background:#fff4bd;font-size:1.35rem;margin-bottom:20px}.benefit h3{margin:0 0 8px;font-size:1.15rem;letter-spacing:-.025em}.benefit p{margin:0;color:var(--muted);font-size:.95rem}.soft-section{background:var(--soft)}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.step{border-top:2px solid #deded7;padding-top:20px}.step-num{font-size:.8rem;font-weight:900;color:#8a8a82;letter-spacing:.1em}.step h3{font-size:1.18rem;margin:12px 0 7px}.step p{color:var(--muted);margin:0;font-size:.95rem}
+    .join-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:55px;align-items:start}.join-aside{position:sticky;top:105px}.join-aside h2{font-size:clamp(2.3rem,4.3vw,3.7rem);line-height:1.03;letter-spacing:-.065em;margin:13px 0 18px}.join-aside p{color:var(--muted)}.contact-note{margin-top:28px;padding:18px;border-radius:17px;background:var(--soft);font-size:.9rem}.form-card{border:1px solid var(--line);border-radius:26px;padding:30px;box-shadow:0 18px 60px #00000008}.form-card h3{font-size:1.35rem;margin:0 0 5px}.form-card>p{margin:0 0 24px;color:var(--muted);font-size:.92rem}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:17px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:.85rem;font-weight:750}.field input,.field select,.field textarea{width:100%;border:1px solid #deded8;border-radius:12px;padding:13px 14px;font:inherit;font-size:.94rem;background:white;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:#b89b00;box-shadow:0 0 0 3px #ffd42935}.field textarea{resize:vertical;min-height:95px}.form-foot{margin-top:18px}.form-foot small{display:block;color:#777;font-size:.78rem;margin-top:12px}.status{margin-top:14px;padding:13px;border-radius:12px;background:#fff4bd;font-size:.9rem;display:none}.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.faq{padding:22px;border:1px solid var(--line);border-radius:17px}.faq h3{font-size:1rem;margin:0 0 8px}.faq p{font-size:.92rem;color:var(--muted);margin:0}.contact-band{background:var(--yellow);padding:45px 0}.contact-inner{display:flex;align-items:center;justify-content:space-between;gap:25px}.contact-inner h2{font-size:clamp(1.8rem,3.5vw,2.8rem);letter-spacing:-.06em;line-height:1.05;margin:0 0 7px}.contact-inner p{margin:0;color:#4e471f}.contact-inner .btn{background:var(--ink);color:white}
+    footer{background:#171717;color:white;padding:43px 0 22px}.footer-top{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;padding-bottom:30px}.footer-copy{color:#aaa;font-size:.9rem;max-width:350px}.footer-links{display:flex;gap:22px;flex-wrap:wrap;font-size:.9rem;color:#ddd}.footer-bottom{border-top:1px solid #393939;padding-top:18px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:#aaa;font-size:.78rem}.disclaimer{max-width:800px;color:#b8b8b2;font-size:.78rem;margin-top:18px}
+    @media(max-width:850px){.hero-grid{grid-template-columns:1fr;gap:15px}.hero{padding-top:55px}.visual{min-height:350px}.orbit{width:310px;height:310px}.benefits,.steps{grid-template-columns:1fr 1fr}.join-grid{grid-template-columns:1fr;gap:30px}.join-aside{position:static}.navlinks{gap:15px}.join-aside h2{max-width:600px}}
+    @media(max-width:620px){.wrap{width:min(100% - 30px,1160px)}.nav{height:66px}.menu-btn{display:block}.navlinks{display:none;position:absolute;top:65px;left:0;right:0;background:white;padding:18px 20px 22px;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch}.navlinks.open{display:flex}.navlinks .btn{text-align:center}.hero{padding:45px 0 40px}h1{font-size:clamp(2.8rem,14vw,4.5rem)}.visual{min-height:320px}.driver-card{padding:20px;max-width:330px}.driver-illustration{height:155px}.car{transform:scale(.82)}section{padding:62px 0}.benefits,.steps,.faq-grid{grid-template-columns:1fr}.form-card{padding:21px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.contact-inner{align-items:flex-start;flex-direction:column}.trustline{gap:12px}.footer-top{flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="Araim Motors home"><span class="brand-mark">A</span><span>ARAIM MOTORS</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="navlinks" id="navLinks" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#opportunity">Opportunities</a><a href="#steps">How it works</a><a href="#faq">FAQs</a><a class="btn" href="#join">Join as a rider <span aria-hidden="true">↗</span></a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> Your next journey starts here</div>
+        <h1>Move forward.<br><span>Drive your future.</span></h1>
+        <p>Explore rider opportunities with Araim Motors. Tell us a little about yourself and our team can follow up about the next steps.</p>
+        <div class="actions"><a class="btn" href="#join">Become a rider <span aria-hidden="true">↗</span></a><a class="btn dark" href="#about">Discover Araim Motors</a></div>
+        <div class="trustline"><span>✓ Simple interest form</span><span>✓ Clear next steps</span><span>✓ Team follow-up</span></div>
+      </div>
+      <div class="visual" aria-label="Illustration of a car">
+        <div class="orbit"></div>
+        <div class="driver-card">
+          <div class="driver-top"><span class="mini-label">ARAIM MOTORS · RIDER COMMUNITY</span><span class="badge-yellow">LET'S GO</span></div>
+          <div class="driver-illustration"><div class="car"><div class="car-roof"></div><div class="car-body"></div><div class="wheel one"></div><div class="wheel two"></div></div></div>
+          <div class="driver-bottom"><div><div class="mini-label">A new road awaits</div><strong>Your drive. Your next step.</strong></div><div class="arrow-bubble">↗</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker">About Araim Motors</div><h2>Good journeys start with good people.</h2><p>We’re building a clear, welcoming way for interested drivers to connect with our team and learn about potential ride-hailing opportunities.</p></div>
+      <div class="benefits">
+        <article class="benefit"><div class="iconbox">↗</div><h3>A clear starting point</h3><p>Share your interest through one straightforward form, without a complicated application process.</p></article>
+        <article class="benefit"><div class="iconbox">◷</div><h3>Know the next steps</h3><p>Our team can review your details and explain the requirements and available opportunities.</p></article>
+        <article class="benefit"><div class="iconbox">◎</div><h3>People-first support</h3><p>We aim to make it easier to ask questions and understand the onboarding process before proceeding.</p></article>
+      </div>
+    </div>
+  </section>
+  <section class="soft-section" id="opportunity">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker">Opportunities</div><h2>Ready to get on the road?</h2><p>If you're interested in driving or want to learn more, send us your details. Eligibility and available roles will be confirmed by the team.</p></div>
+      <div class="benefits">
+        <article class="benefit"><div class="iconbox">🚘</div><h3>Drivers with a car</h3><p>Let us know about your vehicle and driving experience so we can discuss relevant options.</p></article>
+        <article class="benefit"><div class="iconbox">🪪</div><h3>New applicants</h3><p>Have questions about documents or eligibility? Submit an enquiry and ask our team what you'll need.</p></article>
+        <article class="benefit"><div class="iconbox">✉</div><h3>Just exploring?</h3><p>You can register your interest even if you need more information before making a decision.</p></article>
+      </div>
+    </div>
+  </section>
+  <section id="steps">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker">How it works</div><h2>Three simple steps.</h2><p>Start with an enquiry. The team will confirm whether there is a suitable opportunity and what happens next.</p></div>
+      <div class="steps">
+        <article class="step"><div class="step-num">STEP 01</div><h3>Send your details</h3><p>Complete the rider interest form with your contact information and a few basic details.</p></article>
+        <article class="step"><div class="step-num">STEP 02</div><h3>Discuss requirements</h3><p>Be ready to discuss your location, licence, experience and vehicle situation, if applicable.</p></article>
+        <article class="step"><div class="step-num">STEP 03</div><h3>Confirm next steps</h3><p>Proceed only after the relevant requirements, availability and any platform onboarding process are confirmed.</p></article>
+      </div>
+    </div>
+  </section>
+  <section class="soft-section" id="join">
+    <div class="wrap join-grid">
+      <div class="join-aside">
+        <div class="kicker">Rider registration</div><h2>Let's start your next journey.</h2><p>Interested in joining? Fill out this short form and prepare an email enquiry to Araim Motors. Please don't include sensitive document numbers or upload identity documents at this stage.</p>
+        <div class="contact-note"><strong>Prefer email?</strong><br>Write to <a href="mailto:araimmotorsyango@gmail.com"><u>araimmotorsyango@gmail.com</u></a> with your name, phone number and city.</div>
+      </div>
+      <div class="form-card">
+        <h3>Rider interest form</h3><p>Fields marked * are required. Submitting opens your email app with your enquiry prepared for review.</p>
+        <form id="riderForm">
+          <div class="form-grid">
+            <div class="field"><label for="fullName">Full name *</label><input id="fullName" name="fullName" autocomplete="name" required maxlength="100" placeholder="Enter your full name"></div>
+            <div class="field"><label for="phone">Mobile number *</label><input id="phone" name="phone" type="tel" autocomplete="tel" required maxlength="30" placeholder="+92 3XX XXXXXXX"></div>
+            <div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" maxlength="150" placeholder="you@example.com"></div>
+            <div class="field"><label for="city">City *</label><input id="city" name="city" required maxlength="80" placeholder="e.g. Karachi"></div>
+            <div class="field"><label for="driverStatus">Driving licence status *</label><select id="driverStatus" name="driverStatus" required><option value="">Select an option</option><option>Valid driving licence</option><option>Licence in process</option><option>Need guidance</option></select></div>
+            <div class="field"><label for="vehicle">Vehicle availability *</label><select id="vehicle" name="vehicle" required><option value="">Select an option</option><option>I have a vehicle</option><option>I need a vehicle option</option><option>Want to understand the requirements</option></select></div>
+            <div class="field"><label for="experience">Driving experience</label><select id="experience" name="experience"><option value="">Select an option</option><option>Less than 1 year</option><option>1–3 years</option><option>3+ years</option><option>Prefer to discuss</option></select></div>
+            <div class="field"><label for="contactTime">Preferred contact method</label><select id="contactTime" name="contactTime"><option>Email or phone</option><option>Phone call</option><option>Email</option><option>WhatsApp, if available</option></select></div>
+            <div class="field full"><label for="message">Questions or additional information</label><textarea id="message" name="message" maxlength="1000" placeholder="Tell us what you'd like to know (optional)"></textarea></div>
+            <div class="field full"><label><input type="checkbox" id="consent" required style="width:auto;margin-right:8px">I agree that Araim Motors may use these details to respond to my enquiry. *</label></div>
+          </div>
+          <div class="form-foot"><button class="btn" type="submit">Prepare my application <span aria-hidden="true">↗</span></button><small>This starter form does not store or transmit data to a server. Your email app must be configured to send the prepared message.</small><div class="status" id="formStatus" role="status" aria-live="polite"></div></div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker">FAQs</div><h2>Before you get started.</h2></div>
+      <div class="faq-grid">
+        <article class="faq"><h3>Who can send an enquiry?</h3><p>Anyone interested in learning about potential driver opportunities can contact us. Eligibility is confirmed after review.</p></article>
+        <article class="faq"><h3>Do I need my own vehicle?</h3><p>Tell us whether you have a vehicle or need more information. Options and requirements depend on availability and applicable rules.</p></article>
+        <article class="faq"><h3>Does this form confirm registration?</h3><p>No. This is an enquiry only, not a confirmation of employment, platform approval or driver activation.</p></article>
+        <article class="faq"><h3>When will I hear back?</h3><p>Follow-up depends on the team's availability. If you need assistance, contact us by email with your enquiry details.</p></article>
+      </div>
+    </div>
+  </section>
+  <div class="contact-band"><div class="wrap contact-inner"><div><h2>Have a question? Let's talk.</h2><p>Contact Araim Motors about rider opportunities and onboarding enquiries.</p></div><a class="btn" href="mailto:araimmotorsyango@gmail.com?subject=Rider%20opportunity%20enquiry">Email Araim Motors ↗</a></div></div>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="footer-top"><div><a class="brand" href="#home"><span class="brand-mark">A</span><span>ARAIM MOTORS</span></a><p class="footer-copy">A clearer way to enquire about ride-hailing opportunities and driver onboarding.</p></div><nav class="footer-links" aria-label="Footer navigation"><a href="#about">About</a><a href="#opportunity">Opportunities</a><a href="#join">Rider form</a><a href="#faq">FAQs</a><a href="mailto:araimmotorsyango@gmail.com">Contact</a></nav></div>
+    <p class="disclaimer">Brand and affiliation notice: Araim Motors is presented here as an independent business name. This website is not represented as an official Yango website, and no partnership, endorsement or authorization is implied. Any use of third-party names or marks should be approved by their respective owners before publication.</p>
+    <div class="footer-bottom"><span>© <span id="year"></span> Araim Motors. All rights reserved.</span><a href="mailto:araimmotorsyango@gmail.com?subject=Privacy%20enquiry">Privacy enquiries</a></div>
+  </div>
+</footer>
+<script>
+  const menuBtn=document.getElementById('menuBtn');
+  const navLinks=document.getElementById('navLinks');
+  menuBtn.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));menuBtn.textContent=open?'✕':'☰';});
+  navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.textContent='☰';}));
+  document.getElementById('year').textContent=new Date().getFullYear();
+  document.getElementById('riderForm').addEventListener('submit',function(e){
+    e.preventDefault();
+    if(!this.reportValidity())return;
+    const d=new FormData(this);
+    const fields=[['Full name',d.get('fullName')],['Mobile number',d.get('phone')],['Email',d.get('email')||'Not provided'],['City',d.get('city')],['Driving licence status',d.get('driverStatus')],['Vehicle availability',d.get('vehicle')],['Driving experience',d.get('experience')||'Not provided'],['Preferred contact method',d.get('contactTime')||'Not provided'],['Additional information',d.get('message')||'None']];
+    const body='Rider interest enquiry — Araim Motors\n\n'+fields.map(([k,v])=>k+': '+v).join('\n')+'\n\nConsent to contact: Yes';
+    const status=document.getElementById('formStatus');
+    status.style.display='block';
+    status.textContent='Your email app should open with the enquiry prepared. Please review it and press Send. This form does not submit directly to a server.';
+    window.location.href='mailto:araimmotorsyango@gmail.com?subject='+encodeURIComponent('Rider interest enquiry — '+d.get('fullName'))+'&body='+encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>
