@@ -46,7 +46,7 @@ GitHub Pages deployment must be enabled by a repository administrator. A custom 
 
 ## 📩 Application Form: Web3Forms
 
-The rider interest form submits to the Web3Forms API (`https://api.web3forms.com/submit`) and displays success or error feedback. The Web3Forms access key is included in the client-side form, as intended for this service. Web3Forms sends submissions to the recipient configured for that key; verify the recipient email inside your Web3Forms account before launch.
+The rider interest form submits to the Web3Forms API (`https://api.web3forms.com/submit`) and displays success or error feedback. The Web3Forms access key is a public form identifier, not a private API secret, and is intended to be present in client-side HTML. It can be used by others to attempt submissions, so keep spam controls enabled and verify the configured recipient inside your Web3Forms account. If your plan supports it, restrict submissions to the published website domain; a CAPTCHA such as Turnstile or hCaptcha can add another anti-spam layer.
 
 The form includes a hidden honeypot field, but no client-side spam measure guarantees that all spam will be blocked. Review Web3Forms spam-protection options and consider domain restrictions if available for your plan. Test a submission end-to-end before publishing the site.
 
@@ -55,7 +55,7 @@ The website collects contact and recruitment enquiry information. Publish a clea
 ## ⚙️ Customization
 
 - **Website content and layout:** edit `index.html`.
-- **Contact email:** `arainmotors.yango@gmail.com` (update consistently if it changes.
+- **Contact destination:** Manage and verify the recipient address inside the Web3Forms account for this form. Keep private inbox addresses out of public site content and repository documentation.
 - **Brand assets:** use only logos, trademarks, and visual assets you are authorized to use.
 - **Recruitment terms:** verify eligibility criteria, fees (if any), required documents, and any claims about earnings or opportunities before publishing them.
 - **Privacy and legal text:** adapt it to the actual application workflow and applicable local requirements.
@@ -76,10 +76,23 @@ The website collects contact and recruitment enquiry information. Publish a clea
 
 ```text
 arainmotors.yango/
-├── index.html          # Main website, styles, and client-side form behavior
+├── index.html
+├── about.html
+├── opportunities.html
+├── driver-guide.html
+├── how-it-works.html
+├── faq.html
+├── join.html
+├── report-problem.html
+├── before-you-apply.html
+├── enquiry-process.html
+├── contact.html
 ├── assets/
-│   └── yango-logo.svg  # Red Yango logo asset used in the header and footer
-└── README.md    # Project documentation
+│   ├── arain-motors-logo.svg
+│   └── yango-logo.svg
+├── robots.txt
+├── sitemap.xml
+└── README.md
 ```
 
 ## 🤝 Contributing
