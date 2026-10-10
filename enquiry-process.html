@@ -71,6 +71,48 @@
   @media(min-width:1001px){.navlinks{gap:13px;font-size:.84rem}.navlinks>a:not(.btn){white-space:nowrap}}
   
   @media(max-width:850px){.nav{position:relative}.menu-btn{display:block;flex-shrink:0}.navlinks{display:none;position:absolute;top:calc(100% - 1px);left:0;right:0;z-index:100;background:#fff;padding:16px 20px 22px;border-bottom:1px solid #f0dfe0;box-shadow:0 20px 25px #2c000708;flex-direction:column;align-items:stretch;gap:4px;font-size:.95rem}.navlinks.open{display:flex}.navlinks>a{display:block!important;padding:10px 6px}.navlinks>a:after{display:none}.navlinks .btn{margin-top:8px;text-align:center}}
+
+    /* Enquiry process: engaging motion and an early, clear CTA */
+    #enquiry-details{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(120deg,#fff8f8 0%,#fff 47%,#fff2f3 100%);background-size:180% 180%;animation:enquiryBgShift 16s ease-in-out infinite}
+    #enquiry-details:before,#enquiry-details:after{content:"";position:absolute;z-index:-1;pointer-events:none;border:1px solid #f0bdc2;border-radius:50%;animation:enquiryOrbFloat 13s ease-in-out infinite}
+    #enquiry-details:before{width:320px;height:320px;right:-130px;top:3%;box-shadow:0 0 0 28px #e6001207,0 0 0 56px #e6001205}
+    #enquiry-details:after{width:220px;height:220px;left:-120px;bottom:5%;animation-delay:-5s}
+    #enquiry-details>.wrap{position:relative;z-index:1}
+    #enquiry-details .section-head{max-width:800px;animation:enquiryHeadIn .8s cubic-bezier(.2,.7,.2,1) both}
+    #enquiry-details .section-head .kicker{display:inline-flex;align-items:center;gap:8px;background:#ffe8ea;color:#a8000d;padding:8px 12px;border-radius:999px}
+    #enquiry-details .section-head .kicker:before{content:"";width:7px;height:7px;border-radius:50%;background:#e60012;box-shadow:0 0 0 5px #e6001210;animation:enquiryDotPulse 2.2s ease-in-out infinite}
+    #enquiry-details .section-head h2{max-width:760px}
+    #enquiry-details .section-head>p{max-width:740px;line-height:1.8}
+    .enquiry-top-actions{display:flex;gap:13px;align-items:center;flex-wrap:wrap;margin-top:-13px;margin-bottom:34px}
+    .enquiry-submit-btn{position:relative;overflow:hidden;isolation:isolate;animation:enquiryBtnPulse 3.5s ease-in-out infinite;min-height:49px}
+    .enquiry-submit-btn:after{content:"";position:absolute;z-index:-1;top:-40%;bottom:-40%;left:-45%;width:32%;transform:skewX(-22deg);background:linear-gradient(90deg,transparent,#ffffff80,transparent);animation:enquiryBtnShine 4.5s 1s ease-in-out infinite}
+    .enquiry-submit-btn:hover{transform:translateY(-4px) scale(1.02)}
+    #enquiry-details .steps{gap:19px;position:relative}
+    #enquiry-details .step{position:relative;overflow:hidden;padding:23px 22px 25px;border:1px solid #f0dede;border-top:3px solid #e60012;border-radius:20px;background:#ffffffd9;box-shadow:0 10px 28px #4a001008;transition:transform .34s cubic-bezier(.2,.7,.2,1),border-color .3s,box-shadow .34s}
+    #enquiry-details .step:after{content:"";position:absolute;top:-45%;bottom:-45%;left:-60%;width:34%;transform:skewX(-20deg);background:linear-gradient(90deg,transparent,#ffe9ebcc,transparent);transition:left .65s ease;pointer-events:none}
+    #enquiry-details .step:hover{transform:translateY(-7px);border-color:#efaab1;box-shadow:0 19px 40px #e6001212}
+    #enquiry-details .step:hover:after{left:130%}
+    #enquiry-details .step-num{display:inline-flex;align-items:center;padding:6px 10px;border-radius:999px;background:#ffe8ea;color:#b90010;font-size:.72rem}
+    #enquiry-details .step h3{font-size:1.2rem;letter-spacing:-.025em}
+    #enquiry-details .step p{line-height:1.78}
+    #enquiry-details .seo-copy{max-width:880px;margin-top:45px!important;padding:26px;border:1px solid #f0dede;border-radius:22px;background:#ffffffd9;box-shadow:0 13px 36px #4a001008}
+    #enquiry-details .seo-copy h2{font-size:clamp(1.8rem,3vw,2.6rem)}
+    #enquiry-details .seo-copy p{line-height:1.85;color:#626262}
+    .enquiry-reveal{opacity:1;transform:none;transition:opacity .65s ease,transform .65s cubic-bezier(.2,.7,.2,1)}
+    .enquiry-motion-ready .enquiry-reveal:not(.is-visible){opacity:0;transform:translateY(24px)}
+    .enquiry-motion-ready .enquiry-reveal.is-visible{opacity:1;transform:translateY(0)}
+    .enquiry-motion-ready .steps .step:nth-child(2){transition-delay:.08s}
+    .enquiry-motion-ready .steps .step:nth-child(3){transition-delay:.16s}
+    @keyframes enquiryBgShift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+    @keyframes enquiryOrbFloat{0%,100%{transform:translate(0,0) scale(1);opacity:.55}50%{transform:translate(-19px,18px) scale(1.08);opacity:1}}
+    @keyframes enquiryHeadIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes enquiryDotPulse{0%,100%{box-shadow:0 0 0 4px #e600120a}50%{box-shadow:0 0 0 8px #e6001200}}
+    @keyframes enquiryBtnPulse{0%,100%{box-shadow:0 8px 20px #e6001229}50%{box-shadow:0 12px 30px #e600124d}}
+    @keyframes enquiryBtnShine{0%,62%,100%{left:-45%;opacity:0}70%{opacity:1}88%{left:130%;opacity:0}}
+    @media(max-width:850px){#enquiry-details .steps{grid-template-columns:1fr 1fr}#enquiry-details .step:last-child{grid-column:1/-1}}
+    @media(max-width:620px){#enquiry-details{padding-top:48px}#enquiry-details .steps{grid-template-columns:1fr;gap:14px}#enquiry-details .step:last-child{grid-column:auto}#enquiry-details .step{padding:21px}#enquiry-details .seo-copy{padding:20px;margin-top:32px!important}.enquiry-top-actions{margin-top:-6px;margin-bottom:25px}.enquiry-submit-btn{width:100%}}
+    @media(prefers-reduced-motion:reduce){#enquiry-details,#enquiry-details:before,#enquiry-details:after,#enquiry-details .section-head,#enquiry-details .section-head .kicker:before,.enquiry-submit-btn,.enquiry-submit-btn:after,#enquiry-details .step,#enquiry-details .step:after,.enquiry-reveal,.enquiry-motion-ready .enquiry-reveal:not(.is-visible),.enquiry-motion-ready .enquiry-reveal.is-visible{animation:none!important;transition:none!important;transform:none!important;opacity:1!important}}
+
   </style>
 
 <style id="site-whatsapp-widget">
@@ -91,13 +133,14 @@
 <main>
 <section id="enquiry-details">
 <div class="wrap">
-<div class="section-head"><div class="kicker">How enquiries work</div><h2>From first message to next steps.</h2><p>We want visitors to understand what happens after they use the Arain Motors website. The process starts with your enquiry and continues only after the details and any available opportunity can be reviewed.</p></div>
+<div class="section-head enquiry-reveal"><div class="kicker">How enquiries work</div><h2>From first message to next steps.</h2><p>We want visitors to understand what happens after they use the Arain Motors website. The process starts with your enquiry and continues only after the details and any available opportunity can be reviewed.</p></div>
+<div class="enquiry-top-actions"><a class="btn enquiry-submit-btn" href="join.html">Submit an enquiry <span aria-hidden="true">↗</span></a></div>
 <div class="steps">
-<div class="step"><div class="step-num">STEP 01</div><h3>Send your enquiry</h3><p>Complete the interest form with your basic contact details, city, licence status, vehicle availability and any question you want to ask. Check your details before submitting.</p></div>
-<div class="step"><div class="step-num">STEP 02</div><h3>Review and follow-up</h3><p>Our team may use your selected contact method to clarify your interest and explain the relevant next steps.</p></div>
-<div class="step"><div class="step-num">STEP 03</div><h3>Verify before proceeding</h3><p>Ask about eligibility, documentation, fees, vehicle terms and platform-specific requirements. Verify any third-party account or approval directly with that provider.</p></div>
+<div class="step enquiry-reveal"><div class="step-num">STEP 01</div><h3>Send your enquiry</h3><p>Complete the interest form with your basic contact details, city, licence status, vehicle availability and any question you want to ask. Check your details before submitting.</p></div>
+<div class="step enquiry-reveal"><div class="step-num">STEP 02</div><h3>Review and follow-up</h3><p>Our team may use your selected contact method to clarify your interest and explain the relevant next steps.</p></div>
+<div class="step enquiry-reveal"><div class="step-num">STEP 03</div><h3>Verify before proceeding</h3><p>Ask about eligibility, documentation, fees, vehicle terms and platform-specific requirements. Verify any third-party account or approval directly with that provider.</p></div>
 </div>
-<div class="section-head seo-copy" style="margin-top:42px"><div class="kicker">About this website</div><h2>Find the Arain Motors contact and rider enquiry page.</h2><p>This is the Arain Motors website for general driver opportunity information and enquiries. Some visitors may search for the business as “Arain Motors”; this page uses both spellings to help visitors recognise the brand. Use the contact form to describe your question, the city you are enquiring from, and whether you have a vehicle or need further information.</p><p>The information here is general and may not reflect the latest requirements of a ride-hailing company, regulator or other third party. Confirm current rules, fees, terms and account status with the appropriate organisation. Arain Motors does not promise employment, a particular income, a vehicle, or acceptance by any platform merely because an enquiry has been sent.</p><p>For your safety, share only information needed to start the conversation. Do not enter payment card details, banking credentials, passwords or one-time verification codes in the website form. If you receive a request for payment or sensitive information, independently verify who is requesting it and why before responding.</p></div>
+<div class="section-head seo-copy enquiry-reveal" style="margin-top:42px"><div class="kicker">About this website</div><h2>Find the Arain Motors contact and rider enquiry page.</h2><p>This is the Arain Motors website for general driver opportunity information and enquiries. Some visitors may search for the business as “Arain Motors”; this page uses both spellings to help visitors recognise the brand. Use the contact form to describe your question, the city you are enquiring from, and whether you have a vehicle or need further information.</p><p>The information here is general and may not reflect the latest requirements of a ride-hailing company, regulator or other third party. Confirm current rules, fees, terms and account status with the appropriate organisation. Arain Motors does not promise employment, a particular income, a vehicle, or acceptance by any platform merely because an enquiry has been sent.</p><p>For your safety, share only information needed to start the conversation. Do not enter payment card details, banking credentials, passwords or one-time verification codes in the website form. If you receive a request for payment or sensitive information, independently verify who is requesting it and why before responding.</p></div>
 </div>
 </section>
 
@@ -113,8 +156,18 @@
 const menuBtn=document.getElementById('menuBtn'),navLinks=document.getElementById('navLinks');
 if(menuBtn&&navLinks){menuBtn.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));menuBtn.textContent=open?'✕':'☰';});navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.textContent='☰';}));}
 const year=document.getElementById('year');if(year)year.textContent=new Date().getFullYear();
-const riderForm=document.getElementById('riderForm');
-if(riderForm)riderForm.addEventListener('submit',async function(e){e.preventDefault();if(!this.reportValidity())return;const form=this,submitBtn=document.getElementById('submitBtn'),status=document.getElementById('formStatus'),originalLabel=submitBtn.innerHTML;status.style.display='block';status.textContent='Sending your application securely…';submitBtn.disabled=true;submitBtn.style.opacity='.65';submitBtn.setAttribute('aria-busy','true');try{const response=await fetch('https://api.web3forms.com/submit',{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}});const result=await response.json();if(response.ok&&result.success){status.textContent='Thank you! Your enquiry has been sent successfully. Arain Motors can now review your details.';status.style.background='#e7f7e9';form.reset();}else{throw new Error(result.message||'The form service could not accept your submission.');}}catch(error){status.textContent='We could not send your enquiry right now. Please try again in a little while.';status.style.background='#fff0e8';}finally{submitBtn.disabled=false;submitBtn.style.opacity='';submitBtn.removeAttribute('aria-busy');submitBtn.innerHTML=originalLabel;}});
+</script>
+<script>
+(function(){
+  const targets=document.querySelectorAll('#enquiry-details .enquiry-reveal');
+  if(!targets.length)return;
+  if(!('IntersectionObserver' in window)||window.matchMedia('(prefers-reduced-motion: reduce)').matches){targets.forEach(el=>el.classList.add('is-visible'));return;}
+  document.documentElement.classList.add('enquiry-motion-ready');
+  const observer=new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');observer.unobserve(entry.target);}});
+  },{threshold:.12,rootMargin:'0px 0px -24px 0px'});
+  targets.forEach(el=>observer.observe(el));
+})();
 </script>
 <a class="mobile-join-cta" href="join.html" aria-label="Join as a rider — open rider application"><span class="join-arrow" aria-hidden="true">↗</span><span>Join as a rider</span><span class="join-arrow" aria-hidden="true">→</span></a>
 
