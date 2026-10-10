@@ -7,7 +7,7 @@ A responsive, mobile-friendly landing page for **Araim Motors**, designed to int
 ## ✨ Features
 
 - Responsive layout for desktop, tablet, and mobile screens
-- Clean, high-contrast visual design and custom Araim Motors mark
+- Clean, high-contrast visual design and Araim Motors branding with a red Yango logo display
 - Sections for the homepage, company introduction, opportunities, application steps, FAQs, and contact details
 - Rider interest form with fields for contact details, city, licence status, vehicle availability, experience, and preferred contact method
 - Basic form validation, applicant consent checkbox, and hidden honeypot spam field
@@ -55,7 +55,7 @@ The website collects contact and recruitment enquiry information. Publish a clea
 ## ⚙️ Customization
 
 - **Website content and layout:** edit `index.html`.
-- **Contact email:** find the email address in the form/contact section and update it consistently if it changes.
+- **Contact email:** `arainmotors.yango@gmail.com` (update consistently if it changes.
 - **Brand assets:** use only logos, trademarks, and visual assets you are authorized to use.
 - **Recruitment terms:** verify eligibility criteria, fees (if any), required documents, and any claims about earnings or opportunities before publishing them.
 - **Privacy and legal text:** adapt it to the actual application workflow and applicable local requirements.
@@ -76,7 +76,9 @@ The website collects contact and recruitment enquiry information. Publish a clea
 
 ```text
 arainmotors.yango/
-├── index.html   # Main website, styles, and client-side form behavior
+├── index.html          # Main website, styles, and client-side form behavior
+├── assets/
+│   └── yango-logo.svg  # Red Yango logo asset used in the header and footer
 └── README.md    # Project documentation
 ```
 
