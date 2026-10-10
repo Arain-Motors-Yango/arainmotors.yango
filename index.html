@@ -229,6 +229,7 @@
 @media(max-width:620px){
   body{padding-bottom:calc(90px + env(safe-area-inset-bottom))}
   html{scroll-padding-bottom:105px}
+  .navlinks{max-height:calc(100vh - 170px);max-height:calc(100dvh - 170px)}
   .mobile-join-cta{
     display:flex;position:fixed;left:14px;right:14px;
     bottom:calc(12px + env(safe-area-inset-bottom));z-index:1001;
@@ -464,7 +465,26 @@
 </footer>
 <script>
 const menuBtn=document.getElementById('menuBtn'),navLinks=document.getElementById('navLinks');
-if(menuBtn&&navLinks){menuBtn.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));menuBtn.textContent=open?'✕':'☰';});navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.textContent='☰';}));}
+if(menuBtn&&navLinks){
+  menuBtn.addEventListener('click',()=>{
+    const open=navLinks.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded',String(open));
+    menuBtn.textContent=open?'✕':'☰';
+  });
+  navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+    navLinks.classList.remove('open');
+    menuBtn.setAttribute('aria-expanded','false');
+    menuBtn.textContent='☰';
+  }));
+  document.addEventListener('keydown',event=>{
+    if(event.key==='Escape'&&navLinks.classList.contains('open')){
+      navLinks.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded','false');
+      menuBtn.textContent='☰';
+      menuBtn.focus();
+    }
+  });
+}
 const year=document.getElementById('year');if(year)year.textContent=new Date().getFullYear();
 
 document.documentElement.classList.add('js-motion');
