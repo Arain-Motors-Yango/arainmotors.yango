@@ -1,1 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" role="img" aria-labelledby="t"><title id="t">Arain Motors</title><defs><linearGradient id="r" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff3344"/><stop offset="1" stop-color="#b90010"/></linearGradient></defs><g transform="translate(3 4)"><path d="M4 88 40 8h24l39 80H80l-7-17H34l-7 17Z" fill="url(#r)"/><path d="m43 58 10-24 11 24Z" fill="#fff"/><path d="M10 78h70" stroke="#fff" stroke-width="4" stroke-linecap="round"/></g><text x="125" y="51" font-family="Arial,Helvetica,sans-serif" font-size="43" font-weight="900" letter-spacing=".5" fill="#171717">ARAIM</text><text x="128" y="83" font-family="Arial,Helvetica,sans-serif" font-size="26" font-weight="800" letter-spacing="7" fill="#e60012">MOTORS</text><path d="M128 92h170" stroke="#e60012" stroke-width="3" stroke-linecap="round"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1390 650" role="img" aria-labelledby="title desc">
+<title id="title">ARAIN MOTORS</title>
+<desc id="desc">Red and white italic racing-style Arain Motors logo with speed lines and a road underline.</desc>
+<rect width="1390" height="650" rx="44" fill="#f20b0b"/>
+<g fill="#fff">
+<path d="M90 190 L355 172 L445 96 L535 96 L337 302 L269 302 L331 235 L140 246 L191 224 L96 224 Z" />
+<path d="M390 303 L510 96 L611 96 L591 302 L516 302 L520 269 L455 269 L433 303 Z"/>
+<path d="M465 229 L527 229 L535 155 Z" fill="#f20b0b"/>
+<path d="M615 96 L726 96 Q803 96 788 151 Q780 181 744 197 L775 302 L700 302 L678 218 L657 302 L588 302 Z M680 145 L666 191 L704 191 Q723 191 727 170 Q731 145 707 145 Z"/>
+<path d="M790 302 L890 96 L991 96 L971 302 L897 302 L901 269 L836 269 L814 302 Z"/>
+<path d="M846 229 L908 229 L916 155 Z" fill="#f20b0b"/>
+<path d="M1003 96 L1077 96 L1008 302 L934 302 Z"/>
+<path d="M1091 96 L1170 96 L1212 218 L1254 96 L1324 96 L1254 302 L1176 302 L1134 183 L1094 302 L1020 302 Z"/>
+<path d="M470 325 L535 325 L518 384 L554 325 L623 325 L606 384 L644 325 L712 325 L695 384 L731 325 L799 325 L782 384 L818 325 L885 325 L868 384 L904 325 L973 325 L956 384 L992 325 L1058 325 L1040 384 L1076 325 L1145 325 L1127 384 L1160 325 L1215 325 L1194 398 L450 398 Z" opacity="0"/>
+<text x="1070" y="393" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="122" font-weight="900" font-style="italic" letter-spacing="-7" textLength="650" lengthAdjust="spacingAndGlyphs">MOTORS</text>
+<path d="M416 495 Q610 421 832 412 L1290 390 L1176 414 L858 438 Q632 456 492 514 L412 514 Z"/>
+<path d="M574 503 L633 481 L668 480 L609 505 Z" fill="#f20b0b"/>
+<path d="M701 474 L754 457 L787 455 L735 475 Z" fill="#f20b0b"/>
+<path d="M819 448 L866 434 L895 432 L848 449 Z" fill="#f20b0b"/>
+<path d="M925 428 L966 416 L993 414 L952 429 Z" fill="#f20b0b"/>
+</g>
+</svg>
