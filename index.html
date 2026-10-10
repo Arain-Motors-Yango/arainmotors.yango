@@ -87,7 +87,7 @@
     .ticker-track{display:flex;align-items:center;gap:34px;width:max-content;padding:17px 0;white-space:nowrap;animation:tickerRun 30s linear infinite}
     .ticker-track span{font-size:.79rem;font-weight:900;letter-spacing:.18em}.ticker-track i{font-style:normal;color:#ff3445;font-size:1.1rem}
     .ticker-track:hover{animation-play-state:paused}
-    .promise-section{padding:74px 0;background:#fff}
+    .sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}\n    .promise-section{padding:74px 0;background:#fff}
     .promise-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
     .promise-card{position:relative;padding:27px 25px;border:1px solid #f0dede;border-radius:23px;background:linear-gradient(145deg,#fff,#fff9f9);overflow:hidden;transition:transform .35s,border-color .35s,box-shadow .35s}
     .promise-card:after{content:"";position:absolute;width:130px;height:130px;border-radius:50%;right:-60px;top:-65px;background:#e6001208;transition:transform .5s}
@@ -263,7 +263,7 @@
         <div class="eyebrow"><span class="live-pulse"></span> ARAIN MOTORS · RIDER ENQUIRIES</div>
         <h1>YOUR NEXT MILE.<br><span class="red-line">YOUR NEXT MOVE.</span></h1>
         <p>Looking into ride-hailing or rider opportunities? Start with Arain Motors. Explore the basics, understand the next steps and send an enquiry so our team can guide you on what to prepare.</p>
-        <div class="hero-actions"><a class="btn" href="join.html">Start your enquiry <span aria-hidden="true">↗</span></a><a class="outline-btn" href="opportunities.html">Explore opportunities <span aria-hidden="true">→</span></a></div>
+        <div class="hero-actions"><a class="btn" href="join.html">Join as a rider <span aria-hidden="true">↗</span></a><a class="outline-btn" href="opportunities.html">Explore opportunities <span aria-hidden="true">→</span></a></div>
         <div class="hero-pills"><span><b></b> Car rider enquiries</span><span><b></b> Motorbike rider interest</span><span><b></b> Clear next steps</span></div>
       </div>
       <div class="hero-scene">
@@ -302,21 +302,21 @@
     <div class="wrap"><div class="hero-footline"></div></div>
   </section>
 
-  <div class="motion-ticker" aria-label="Arain Motors themes">
+  <div class="motion-ticker" aria-hidden="true">
     <div class="ticker-track"><span>YOUR DRIVE</span><i>✦</i><span>YOUR NEXT STEP</span><i>✦</i><span>CAR RIDERS</span><i>✦</i><span>MOTORBIKE RIDERS</span><i>✦</i><span>RIDER GUIDANCE</span><i>✦</i><span>YOUR DRIVE</span><i>✦</i><span>YOUR NEXT STEP</span><i>✦</i><span>CAR RIDERS</span><i>✦</i><span>MOTORBIKE RIDERS</span><i>✦</i><span>RIDER GUIDANCE</span><i>✦</i></div>
   </div>
 
   <section class="promise-section">
-    <div class="wrap promise-grid">
+    <div class="wrap promise-grid"><h2 class="sr-only">Your next steps with Arain Motors</h2>
       <article class="promise-card" data-reveal style="--reveal-delay:.05s"><span class="promise-number">01 / GET CLARITY</span><h3>Know what comes next</h3><p>Explore the enquiry process and find out which details may be useful before you start.</p></article>
       <article class="promise-card" data-reveal style="--reveal-delay:.14s"><span class="promise-number">02 / PREPARE</span><h3>Get ready with guidance</h3><p>Review the rider guide and vehicle-related considerations so you can ask better questions.</p></article>
-      <article class="promise-card" data-reveal style="--reveal-delay:.23s"><span class="promise-number">03 / CONNECT</span><h3>Send your enquiry</h3><p>Share your interest with Arain Motors. Any next step depends on review, local requirements and platform criteria.</p></article>
+      <article class="promise-card" data-reveal style="--reveal-delay:.23s"><span class="promise-number">03 / CONNECT</span><h3>Send your enquiry</h3><p>Share your interest with Arain Motors and our team can help you understand the relevant requirements and next steps.</p></article>
     </div>
   </section>
 
   <section class="vehicle-section" id="vehicles">
     <div class="wrap">
-      <div class="section-heading" data-reveal><span class="kicker">Find your starting point</span><h2>Different rides.<br><em>One next step.</em></h2><p>Tell us what you are interested in and use the resources to understand the process. Availability and eligibility can vary, so we keep the focus on clear information rather than promises.</p></div>
+      <div class="section-heading" data-reveal><span class="kicker">Find your starting point</span><h2>Different rides.<br><em>One next step.</em></h2><p>Tell us what you are interested in and use the resources to understand the process. Our guidance focuses on the information, questions and next steps that matter for your situation.</p></div>
       <div class="vehicle-grid">
         <article class="vehicle-card" data-reveal style="--reveal-delay:.04s">
           <span class="vehicle-type">01 · FOUR WHEELS</span><h3>Car rider</h3><p>Interested in using a car? Check the guidance, prepare your questions and enquire about the requirements relevant to your situation.</p>
@@ -369,7 +369,7 @@
           <span class="vehicle-type">03 · STILL EXPLORING</span><h3>Help me understand</h3><p>Not sure where to begin? Start with the simple overview and send an enquiry with the questions you have.</p>
           <div class="vehicle-graphic">
             <svg viewBox="0 0 360 180" role="img" aria-label="Animated road toward the horizon"><defs><linearGradient id="roadGrad" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffb7bf"/><stop offset="1" stop-color="#e60012"/></linearGradient></defs><g class="auto-motion"><circle cx="180" cy="65" r="45" fill="#ffe9eb"/><circle cx="180" cy="65" r="28" fill="none" stroke="#e60012" stroke-opacity=".28" stroke-width="2"/><path d="M38 157 L140 75 L220 75 L322 157 Z" fill="url(#roadGrad)" opacity=".16"/><path d="M144 157 L166 75 L194 75 L216 157 Z" fill="#e60012" opacity=".75"/><path d="M176 157 L178 128 M179 112 L180 98 M181 88 L181 80" stroke="#fff" stroke-width="4" stroke-linecap="round"/><path d="M56 157 H135 M225 157 H304" stroke="#e60012" stroke-opacity=".4" stroke-width="3" stroke-linecap="round"/><path d="M100 119 L127 98 M260 119 L233 98" stroke="#e60012" stroke-opacity=".65" stroke-width="3" stroke-linecap="round"/></g></svg>
-          </div><a class="vehicle-link" href="join.html">Tell us what you need <span>→</span></a>
+          </div><a class="vehicle-link" href="contact.html#contact-form">Ask a question <span>→</span></a>
         </article>
       </div>
     </div>
