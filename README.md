@@ -10,8 +10,9 @@ A responsive, mobile-friendly landing page for **Araim Motors**, designed to int
 - Clean, high-contrast visual design and custom Araim Motors mark
 - Sections for the homepage, company introduction, opportunities, application steps, FAQs, and contact details
 - Rider interest form with fields for contact details, city, licence status, vehicle availability, experience, and preferred contact method
-- Basic form validation and applicant consent checkbox
-- Email-draft handoff for applications using the visitor's default email app
+- Basic form validation, applicant consent checkbox, and hidden honeypot spam field
+- Web3Forms integration that sends rider applications to the email address configured for the supplied access key
+- Submission progress, success, and error feedback
 - Semantic HTML and lightweight, dependency-free front-end
 
 ## 🧰 Built With
@@ -43,11 +44,13 @@ For a local development server, you can use the Live Server extension in Visual 
 
 GitHub Pages deployment must be enabled by a repository administrator. A custom domain can be configured in the same settings if you own the domain.
 
-## 📩 Application Form: Current Limitation
+## 📩 Application Form: Web3Forms
 
-The current form prepares an email draft addressed to `araimmotorsyango@gmail.com` using the visitor's email application. It **does not automatically send, store, or manage applications**. A visitor may need to have an email app configured and must press Send themselves.
+The rider interest form submits to the Web3Forms API (`https://api.web3forms.com/submit`) and displays success or error feedback. The Web3Forms access key is included in the client-side form, as intended for this service. Web3Forms sends submissions to the recipient configured for that key; verify the recipient email inside your Web3Forms account before launch.
 
-For dependable application processing, connect the form to a trusted form backend or server endpoint. Before collecting applicant data, configure appropriate privacy information, access controls, spam protection, and data-retention practices. Never commit passwords, API keys, or other secrets to this public repository.
+The form includes a hidden honeypot field, but no client-side spam measure guarantees that all spam will be blocked. Review Web3Forms spam-protection options and consider domain restrictions if available for your plan. Test a submission end-to-end before publishing the site.
+
+The website collects contact and recruitment enquiry information. Publish a clear privacy notice, limit collection to information you need, and avoid requesting identity-document numbers or other sensitive information through this initial form. Review the service's current terms and data-retention details before launch.
 
 ## ⚙️ Customization
 
@@ -62,7 +65,9 @@ For dependable application processing, connect the form to a trusted form backen
 - [ ] Verify the contact email address.
 - [ ] Test all navigation links and form fields on mobile and desktop.
 - [ ] Confirm recruitment information and eligibility requirements are accurate.
-- [ ] Connect and test a secure form-processing service if applications need to be received automatically.
+- [ ] Verify the recipient email configured for the Web3Forms access key.
+- [ ] Send a test application and confirm it arrives in the intended inbox.
+- [ ] Review Web3Forms spam-protection and domain restriction settings.
 - [ ] Publish a privacy notice that accurately explains what applicant information is collected and how it is used.
 - [ ] Confirm permission for any third-party names, logos, or partnership claims.
 - [ ] Enable GitHub Pages or configure another hosting provider.
