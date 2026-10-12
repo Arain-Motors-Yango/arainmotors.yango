@@ -56,7 +56,7 @@ The website collects contact and recruitment enquiry information. Publish a clea
 
 - **Website content and layout:** edit `index.html`.
 - **Contact destination:** Manage and verify the recipient address inside the Web3Forms account for this form. Keep private inbox addresses out of public site content and repository documentation.
-- **Brand assets:** use only logos, trademarks, and visual assets you are authorized to use.
+- **Brand asset:** the header and footer use the original red Arain Motors logo at `assets/arain-motors-logo.svg`. Keep the visual identity consistent and only use third-party trademarks/assets when authorized.
 - **Recruitment terms:** verify eligibility criteria, fees (if any), required documents, and any claims about earnings or opportunities before publishing them.
 - **Privacy and legal text:** adapt it to the actual application workflow and applicable local requirements.
 
@@ -89,7 +89,6 @@ arainmotors.yango/
 ├── contact.html
 ├── assets/
 │   ├── arain-motors-logo.svg
-│   └── yango-logo.svg
 ├── robots.txt
 ├── sitemap.xml
 └── README.md
