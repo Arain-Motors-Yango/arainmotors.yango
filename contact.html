@@ -64,6 +64,14 @@
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1!important;transform:none!important}.contact-visual-card,.visual-illustration svg,.visual-ring,.hero-orbit{transform:none!important}.purpose-card,.founder-card{will-change:auto}}
     .mobile-join-cta{display:none}
     @media(max-width:620px){.mobile-join-cta{display:flex}}
+
+    /* Use the original Arain Motors red logo only; no extra logo lockup */
+    header .brand{gap:0!important;min-width:0}
+    header .brand>.brand-logo{width:165px;height:71px;max-height:71px;object-fit:contain;flex-shrink:0}
+    .footer-top .brand{gap:0!important}
+    .footer-top .brand>.brand-logo{width:170px;height:73px;max-height:73px;object-fit:contain}
+    @media(max-width:850px){header .brand>.brand-logo{width:145px;height:62px;max-height:62px}}
+    @media(max-width:620px){header .brand>.brand-logo{width:112px;height:48px;max-height:48px}.footer-top .brand>.brand-logo{width:145px;height:62px;max-height:62px}}
   </style>
 
 <style id="site-whatsapp-widget">
@@ -81,7 +89,7 @@
 </head>
 <body>
 <header><div class="wrap nav">
-  <a class="brand" href="index.html" aria-label="Arain Motors home"><img class="brand-logo" src="assets/arain-motors-logo.svg" alt="Arain Motors" width="165" height="52"><span class="brand-divider" aria-hidden="true"></span><span class="yango-brand"><img class="yango-logo" src="assets/yango-logo.svg" alt="" width="42" height="42"><span>Yango</span></span></a>
+  <a class="brand" href="index.html" aria-label="Arain Motors home"><img class="brand-logo" src="assets/arain-motors-logo.svg" alt="Arain Motors" width="165" height="52"></a>
   <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation" aria-controls="navLinks" aria-expanded="false">☰</button>
   <nav class="navlinks" id="navLinks" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="opportunities.html">Opportunities</a><a href="driver-guide.html">Driver guide</a><a href="contact.html" aria-current="page">Contact</a><a href="report-problem.html">Report a problem</a><a class="btn" href="join.html">Join as a rider ↗</a></nav>
 </div></header>
@@ -201,7 +209,7 @@
   <section class="closing"><div class="wrap closing-inner reveal"><div><h2>Not sure which option fits?</h2><p>Choose “Other” in the selector and explain it in your own words. We’ve left room for every kind of request.</p></div><a class="btn" href="#contact-form">Open contact form <span aria-hidden="true">↑</span></a></div></section>
 </main>
 <footer><div class="wrap">
-  <div class="footer-top"><div><a class="brand" href="index.html" aria-label="Arain Motors home"><img class="brand-logo" src="assets/arain-motors-logo.svg" alt="Arain Motors" width="165" height="52"><span class="brand-divider" aria-hidden="true"></span><span class="yango-brand"><img class="yango-logo" src="assets/yango-logo.svg" alt="" width="40" height="40"><span>Yango</span></span></a><p class="footer-copy">A clearer way to enquire about rider opportunities, requests and driver guidance.</p></div><nav class="footer-links" aria-label="Footer navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="opportunities.html">Opportunities</a><a href="driver-guide.html">Driver guide</a><a href="contact.html" aria-current="page">Contact</a><a href="report-problem.html">Report a problem</a><a href="join.html">Join as a rider</a><a href="how-it-works.html">How it works</a><a href="faq.html">FAQ</a><a href="before-you-apply.html">Before you apply</a><a href="enquiry-process.html">Enquiry process</a></nav></div>
+  <div class="footer-top"><div><a class="brand" href="index.html" aria-label="Arain Motors home"><img class="brand-logo" src="assets/arain-motors-logo.svg" alt="Arain Motors" width="165" height="52"></a><p class="footer-copy">A clearer way to enquire about rider opportunities, requests and driver guidance.</p></div><nav class="footer-links" aria-label="Footer navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="opportunities.html">Opportunities</a><a href="driver-guide.html">Driver guide</a><a href="contact.html" aria-current="page">Contact</a><a href="report-problem.html">Report a problem</a><a href="join.html">Join as a rider</a><a href="how-it-works.html">How it works</a><a href="faq.html">FAQ</a><a href="before-you-apply.html">Before you apply</a><a href="enquiry-process.html">Enquiry process</a></nav></div>
   <p class="disclaimer">Arain Motors Yango is the official website for Arain Motors rider enquiries and driver guidance. Use the website forms to submit applications, questions, requests or problem reports.</p>
   <div class="footer-bottom"><span>© <span id="year"></span> Arain Motors. All rights reserved.</span><a href="#contact-form">Contact &amp; privacy requests</a></div>
 </div></footer>
