@@ -256,6 +256,14 @@
   @media(min-width:1001px){.navlinks{gap:13px;font-size:.84rem}.navlinks>a:not(.btn){white-space:nowrap}}
   
   @media(max-width:850px){.nav{position:relative}.menu-btn{display:block;flex-shrink:0}.navlinks{display:none;position:absolute;top:calc(100% - 1px);left:0;right:0;z-index:100;background:#fff;padding:16px 20px 22px;border-bottom:1px solid #f0dfe0;box-shadow:0 20px 25px #2c000708;flex-direction:column;align-items:stretch;gap:4px;font-size:.95rem}.navlinks.open{display:flex}.navlinks>a{display:block!important;padding:10px 6px}.navlinks>a:after{display:none}.navlinks .btn{margin-top:8px;text-align:center}}
+
+    /* Use the original Arain Motors red logo only; no extra logo lockup */
+    header .brand{gap:0!important;min-width:0}
+    header .brand>.brand-logo{width:165px;height:71px;max-height:71px;object-fit:contain;flex-shrink:0}
+    .footer-top .brand{gap:0!important}
+    .footer-top .brand>.brand-logo{width:170px;height:73px;max-height:73px;object-fit:contain}
+    @media(max-width:850px){header .brand>.brand-logo{width:145px;height:62px;max-height:62px}}
+    @media(max-width:620px){header .brand>.brand-logo{width:112px;height:48px;max-height:48px}.footer-top .brand>.brand-logo{width:145px;height:62px;max-height:62px}}
   </style>
 
 <style id="site-whatsapp-widget">
@@ -272,7 +280,7 @@
 </style>
 </head>
 <body>
-<header><div class="wrap nav"><a class="brand" href="index.html" aria-label="Arain Motors home"><img class="brand-logo" src="assets/arain-motors-logo.svg" alt="Arain Motors" width="190" height="58"><span class="brand-divider" aria-hidden="true"></span><span class="yango-brand"><img class="yango-logo" src="assets/yango-logo.svg" alt="" width="56" height="56"><span>Yango</span></span></a><button class="menu-btn" id="menuBtn" type="button" aria-label="Toggle navigation" aria-controls="navLinks" aria-expanded="false">☰</button><nav class="navlinks" id="navLinks" aria-label="Main navigation"><a href="index.html" aria-current="page">Home</a><a href="about.html">About</a><a href="opportunities.html">Opportunities</a><a href="driver-guide.html">Driver guide</a><a href="contact.html">Contact</a><a href="report-problem.html">Report a problem</a><a class="btn" href="join.html">Join as a rider ↗</a></nav></div></header>
+<header><div class="wrap nav"><a class="brand" href="index.html" aria-label="Arain Motors home"><img class="brand-logo" src="assets/arain-motors-logo.svg" alt="Arain Motors" width="190" height="58"></a><button class="menu-btn" id="menuBtn" type="button" aria-label="Toggle navigation" aria-controls="navLinks" aria-expanded="false">☰</button><nav class="navlinks" id="navLinks" aria-label="Main navigation"><a href="index.html" aria-current="page">Home</a><a href="about.html">About</a><a href="opportunities.html">Opportunities</a><a href="driver-guide.html">Driver guide</a><a href="contact.html">Contact</a><a href="report-problem.html">Report a problem</a><a class="btn" href="join.html">Join as a rider ↗</a></nav></div></header>
 
 <main>
   <section class="cinema-hero" id="home">
@@ -480,7 +488,7 @@
 </main>
 <footer>
   <div class="wrap">
-    <div class="footer-top"><div><a class="brand" href="index.html"><img class="brand-logo" src="assets/arain-motors-logo.svg" alt="Arain Motors" width="170" height="48"><span class="brand-divider" aria-hidden="true"></span><span class="yango-brand"><img class="yango-logo" src="assets/yango-logo.svg" alt="" width="40" height="40"><span>Yango</span></span></a><p class="footer-copy">A clearer way to enquire about ride-hailing opportunities and driver onboarding.</p></div><nav class="footer-links" aria-label="Footer navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="opportunities.html">Opportunities</a><a href="driver-guide.html">Driver guide</a><a href="report-problem.html">Report a problem</a><a href="contact.html">Contact</a><a href="join.html">Join as a rider</a><a href="how-it-works.html">How it works</a><a href="faq.html">FAQ</a><a href="before-you-apply.html">Before you apply</a><a href="enquiry-process.html">Enquiry process</a></nav></div>
+    <div class="footer-top"><div><a class="brand" href="index.html"><img class="brand-logo" src="assets/arain-motors-logo.svg" alt="Arain Motors" width="170" height="48"></a><p class="footer-copy">A clearer way to enquire about ride-hailing opportunities and driver onboarding.</p></div><nav class="footer-links" aria-label="Footer navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="opportunities.html">Opportunities</a><a href="driver-guide.html">Driver guide</a><a href="report-problem.html">Report a problem</a><a href="contact.html">Contact</a><a href="join.html">Join as a rider</a><a href="how-it-works.html">How it works</a><a href="faq.html">FAQ</a><a href="before-you-apply.html">Before you apply</a><a href="enquiry-process.html">Enquiry process</a></nav></div>
     <p class="disclaimer">Arain Motors Yango is the official website for Arain Motors rider enquiries and driver guidance. Our team helps visitors understand the process, prepare their details and explore the next steps.</p>
     <div class="footer-bottom"><span>© <span id="year"></span> Arain Motors. All rights reserved.</span><a href="contact.html#contact-form">Contact &amp; privacy</a></div>
   </div>
