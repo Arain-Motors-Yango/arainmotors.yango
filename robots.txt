@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
 Sitemap: https://arain-motors-yango.github.io/arainmotors.yango/sitemap.xml
+Sitemap: https://arain-motors-yango.github.io/arainmotors.yango/sitemap.txt
