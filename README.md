@@ -88,7 +88,7 @@ arainmotors.yango/
 ├── enquiry-process.html
 ├── contact.html
 ├── assets/
-│   ├── arain-motors-logo.svg
+│   └── arain-motors-logo.svg
 ├── robots.txt
 ├── sitemap.xml
 └── README.md
