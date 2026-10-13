@@ -136,7 +136,7 @@
     .road-skyline{position:absolute;left:0;right:0;top:0;height:95px;opacity:.5;background:linear-gradient(180deg,#3e1519,transparent)}
     .road-skyline:before{content:"";position:absolute;inset:20px 0 0;background:linear-gradient(90deg,#343434 0 7%,transparent 7% 10%,#292929 10% 13%,transparent 13% 22%,#313131 22% 28%,transparent 28% 32%,#252525 32% 40%,transparent 40% 47%,#333 47% 52%,transparent 52% 60%,#2b2b2b 60% 67%,transparent 67% 75%,#333 75% 82%,transparent 82% 87%,#272727 87% 93%,transparent 93%);clip-path:polygon(0 25%,6% 25%,6% 0,12% 0,12% 38%,18% 38%,18% 12%,25% 12%,25% 48%,31% 48%,31% 5%,38% 5%,38% 34%,45% 34%,45% 20%,52% 20%,52% 55%,59% 55%,59% 10%,67% 10%,67% 33%,74% 33%,74% 0,82% 0,82% 37%,88% 37%,88% 13%,95% 13%,95% 28%,100% 28%,100% 100%,0 100%)}
     .road-surface{position:absolute;left:-5%;right:-5%;bottom:-48px;height:135px;border-top:3px solid #535353;background:repeating-linear-gradient(90deg,transparent 0 72px,#ffffffc2 73px 103px,transparent 104px 170px);background-size:170px 4px;background-position:0 45%;background-repeat:repeat-x;transform:perspective(240px) rotateX(15deg);animation:roadMove .7s linear infinite}
-    .road-car-runner{position:absolute;left:-360px;top:54px;width:330px;animation:carDriveAcross 9s linear infinite;filter:drop-shadow(0 0 20px #e6001260);will-change:left,transform}
+    .road-car-runner{position:absolute;left:-360px;top:54px;width:330px;animation:carDriveAcross 9s linear infinite alternate;filter:drop-shadow(0 0 20px #e6001260);will-change:left,transform}
     .road-bike-runner{position:absolute;left:-220px;top:72px;width:190px;filter:drop-shadow(0 0 17px #ff364a78);animation:bikeDriveAcross 6.3s linear infinite;will-change:left,transform}
     .road-bike-runner svg{display:block;width:100%;height:auto;overflow:visible}
     .runner-wheel-spin{transform-box:fill-box;transform-origin:center;animation:wheelSpin 1.25s linear infinite}
@@ -315,9 +315,9 @@
           <path d="M397 194 L387 247 L280 249" fill="none" stroke="#e9e9e9" stroke-opacity=".45" stroke-width="4"/>
           <path d="M451 192 L478 247" fill="none" stroke="#ffb7bc" stroke-opacity=".55" stroke-width="3"/>
           <path d="M574 246 L653 281 L695 311 L596 309 Z" fill="#c90010" opacity=".72"/>
-          <path class="front-headlight" d="M111 358 Q128 349 151 354 L164 361 L157 369 Q137 373 116 370 Z" fill="#fff0cf" stroke="#ff7b86" stroke-width="3" stroke-linejoin="round"/>
-          <path d="M119 360 Q135 355 151 358 L157 361" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity=".98"/>
-          <path d="M116 369 Q138 372 156 367" fill="none" stroke="#a90010" stroke-width="2" stroke-linecap="round" opacity=".8"/>
+          <path class="front-headlight" d="M108 358 Q126 348 151 353 Q160 355 166 361 L158 371 Q135 375 113 370 Z" fill="#fff4d8" stroke="#ff8a94" stroke-width="2.5" stroke-linejoin="round"/>
+          <path d="M114 359 Q132 353 153 357 L160 361" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity=".95"/>
+          <path d="M115 369 Q137 372 157 368" fill="none" stroke="#e60012" stroke-width="1.5" stroke-linecap="round" opacity=".75"/>
           <path class="rear-light" d="M691 333 L724 340 L735 351 L693 351 Z" fill="#ff9ba2"/>
           <ellipse class="rear-light" cx="713" cy="342" rx="26" ry="14" fill="#ff5966" opacity=".35"/>
           <path d="M108 372 Q410 386 739 372" fill="none" stroke="#ff9ba2" stroke-width="5" stroke-linecap="round" opacity=".68"/>
