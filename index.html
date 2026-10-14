@@ -300,119 +300,175 @@
       <div class="hero-scene">
         <div class="scene-halo"></div><div class="scene-ring"></div><div class="route-orbit"></div>
         <span class="speed-streak s1"></span><span class="speed-streak s2"></span><span class="speed-streak s3"></span><span class="speed-streak s4"></span>
-        <svg class="hero-car-art" viewBox="0 0 820 470" role="img" aria-label="Premium red sports sedan shown from a front three-quarter angle">
+        <svg class="hero-car-art" viewBox="0 0 820 470" role="img" aria-label="Premium red sports sedan viewed from the front and side">
           <defs>
-            <linearGradient id="heroCarSidePaint" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff727c"/><stop offset=".25" stop-color="#f20a1d"/><stop offset=".68" stop-color="#d40013"/><stop offset="1" stop-color="#87000b"/></linearGradient>
-            <linearGradient id="heroCarFrontPaint" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#ff4a58"/><stop offset=".5" stop-color="#e60012"/><stop offset="1" stop-color="#9f0010"/></linearGradient>
-            <linearGradient id="heroCarGlass" x1="0" y1="0" x2=".15" y2="1"><stop stop-color="#a9c3d4"/><stop offset=".35" stop-color="#526b7d"/><stop offset="1" stop-color="#151c26"/></linearGradient>
-            <linearGradient id="heroCarMetal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f6f8"/><stop offset=".45" stop-color="#9da7b1"/><stop offset="1" stop-color="#424950"/></linearGradient>
-            <linearGradient id="heroCarGrille" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#252a31"/><stop offset="1" stop-color="#05070a"/></linearGradient>
-            <radialGradient id="heroCarGlow"><stop stop-color="#ff2638" stop-opacity=".42"/><stop offset="1" stop-color="#ff2638" stop-opacity="0"/></radialGradient>
+            <linearGradient id="amBodySide" x1="0" y1="0" x2="0.85" y2="1">
+              <stop stop-color="#ff4e5c"/><stop offset=".22" stop-color="#f20b1e"/><stop offset=".62" stop-color="#d50013"/><stop offset="1" stop-color="#85000b"/>
+            </linearGradient>
+            <linearGradient id="amBodyFront" x1="0" y1="0" x2=".9" y2="1">
+              <stop stop-color="#ff6570"/><stop offset=".42" stop-color="#ef0016"/><stop offset="1" stop-color="#a5000e"/>
+            </linearGradient>
+            <linearGradient id="amBonnet" x1="0" y1="0" x2="1" y2="1">
+              <stop stop-color="#ff7b84"/><stop offset=".35" stop-color="#f31325"/><stop offset="1" stop-color="#c00012"/>
+            </linearGradient>
+            <linearGradient id="amGlass" x1="0" y1="0" x2=".1" y2="1">
+              <stop stop-color="#9db4c4"/><stop offset=".32" stop-color="#506576"/><stop offset="1" stop-color="#121923"/>
+            </linearGradient>
+            <linearGradient id="amAlloy" x1="0" y1="0" x2="0" y2="1">
+              <stop stop-color="#e7eaee"/><stop offset=".5" stop-color="#89919b"/><stop offset="1" stop-color="#3d434b"/>
+            </linearGradient>
+            <linearGradient id="amGrille" x1="0" y1="0" x2="0" y2="1">
+              <stop stop-color="#20262c"/><stop offset="1" stop-color="#050609"/>
+            </linearGradient>
+            <radialGradient id="amGroundGlow">
+              <stop stop-color="#e60012" stop-opacity=".2"/><stop offset="1" stop-color="#e60012" stop-opacity="0"/>
+            </radialGradient>
           </defs>
-          <ellipse cx="428" cy="407" rx="322" ry="29" fill="#78000c" opacity=".13"/>
-          <ellipse cx="415" cy="405" rx="275" ry="17" fill="url(#heroCarGlow)"/>
-          <path d="M90 419 Q420 392 765 412" fill="none" stroke="#e60012" stroke-opacity=".2" stroke-width="2"/>
-          <path d="M135 429 H249 M287 425 H372 M631 423 H744" stroke="#e60012" stroke-opacity=".35" stroke-width="3" stroke-linecap="round"/>
 
-          <!-- Main body: a low, sculpted coupe with the nose turned toward the viewer -->
-          <path d="M83 352 Q87 330 113 316 L240 282 L318 231 Q344 207 380 204 L501 210 Q536 214 559 240 L644 280 Q699 294 731 324 Q749 341 757 366 L754 384 Q748 400 723 403 L118 416 Q93 414 85 394 Q79 377 83 352Z" fill="url(#heroCarSidePaint)" stroke="#93000d" stroke-width="4" stroke-linejoin="round"/>
+          <!-- Ground shadow and subtle showroom reflections -->
+          <ellipse cx="417" cy="403" rx="316" ry="27" fill="#63000a" opacity=".12"/>
+          <ellipse cx="420" cy="403" rx="265" ry="17" fill="url(#amGroundGlow)"/>
+          <path d="M95 421 Q408 398 735 413" fill="none" stroke="#e60012" stroke-opacity=".2" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M134 431 H238 M291 426 H375 M643 418 H729" stroke="#e60012" stroke-opacity=".28" stroke-width="3" stroke-linecap="round"/>
 
-          <!-- Bonnet and near-side shoulder highlights -->
-          <path d="M126 319 L240 286 L279 315 L228 330 L112 350Z" fill="#ff5663" opacity=".72"/>
-          <path d="M145 316 L233 291 L257 303" fill="none" stroke="#ffd0d4" stroke-opacity=".8" stroke-width="3.5" stroke-linecap="round"/>
-          <path d="M286 306 L333 247 Q353 223 385 219 L498 225 Q522 228 542 251 L575 276 L458 292 L345 304Z" fill="url(#heroCarSidePaint)" opacity=".88"/>
+          <!-- Unified body silhouette -->
+          <path d="M93 331
+                   Q96 308 123 291
+                   L211 264 L282 242
+                   L326 201 Q349 176 381 171
+                   Q421 164 469 174
+                   Q497 179 522 198
+                   L567 231 L642 254
+                   Q681 266 705 293
+                   L724 322 Q731 341 713 357
+                   Q700 371 665 375
+                   L276 397 Q244 401 207 393
+                   L133 379 Q103 371 95 350 Q91 340 93 331 Z"
+                fill="url(#amBodySide)" stroke="#8d000c" stroke-width="4" stroke-linejoin="round"/>
 
-          <!-- Front windscreen and side windows -->
-          <path d="M258 291 L330 240 Q351 223 383 220 L421 224 L444 277 L346 296Z" fill="url(#heroCarGlass)" stroke="#ffadb4" stroke-width="4" stroke-linejoin="round"/>
-          <path d="M433 225 L493 231 Q519 235 541 258 L569 276 L455 279Z" fill="url(#heroCarGlass)" stroke="#ffadb4" stroke-width="4" stroke-linejoin="round"/>
-          <path d="M381 224 L365 291" fill="none" stroke="#d7e1e8" stroke-opacity=".7" stroke-width="4"/>
-          <path d="M437 228 L454 276" fill="none" stroke="#d7e1e8" stroke-opacity=".65" stroke-width="3"/>
-          <path d="M274 288 L335 245" fill="none" stroke="#ffffff" stroke-opacity=".6" stroke-width="3" stroke-linecap="round"/>
-          <path d="M466 236 L508 246" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="3" stroke-linecap="round"/>
+          <!-- Side shoulder: one continuous line flowing from bonnet to rear quarter -->
+          <path d="M237 276 L303 246 L352 201 Q371 184 393 183 L467 186 Q498 190 526 211 L568 238 L642 260"
+                fill="none" stroke="#ff8b94" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" opacity=".88"/>
+          <path d="M270 294 Q422 266 560 270 L638 286" fill="none" stroke="#9b000e" stroke-width="3.5" stroke-linecap="round" opacity=".5"/>
+          <path d="M286 305 Q415 285 537 287" fill="none" stroke="#ffb1b7" stroke-width="2" stroke-linecap="round" opacity=".65"/>
 
-          <!-- Roof, pillars and side mirror -->
-          <path d="M330 239 Q350 214 384 211 L496 218 Q516 220 535 239" fill="none" stroke="#9f0010" stroke-width="7" stroke-linecap="round"/>
-          <path d="M468 220 L486 209 L514 214 L531 231 L509 234Z" fill="url(#heroCarSidePaint)" stroke="#a90010" stroke-width="2"/>
-          <path d="M487 215 L510 219" stroke="#ffe3e5" stroke-opacity=".9" stroke-width="2.5" stroke-linecap="round"/>
-          <path d="M549 255 L574 264 L588 279 L568 282 L552 271Z" fill="#bf0011" stroke="#97000c" stroke-width="2"/>
-          <path d="M556 260 L576 269" stroke="#ff9ba3" stroke-width="2.5" stroke-linecap="round"/>
+          <!-- Roof and coherent window layout -->
+          <path d="M272 260 L324 210 Q348 184 381 180
+                   L464 185 Q491 188 514 206
+                   L550 232 L524 241 L484 220
+                   Q473 213 457 212 L383 208 Q367 209 353 221 L315 251 Z"
+                fill="#b90011" opacity=".72"/>
+          <path d="M278 258 L326 214 Q350 188 381 184
+                   L393 185 L357 224 L329 250 Z"
+                fill="url(#amGlass)" stroke="#ffb9bf" stroke-width="3.5" stroke-linejoin="round"/>
+          <path d="M402 186 L463 191 Q487 194 507 212
+                   L534 231 L480 221 L414 214 Z"
+                fill="url(#amGlass)" stroke="#ffb9bf" stroke-width="3.5" stroke-linejoin="round"/>
+          <path d="M395 188 L378 213" stroke="#e8eef2" stroke-opacity=".8" stroke-width="3.5" stroke-linecap="round"/>
+          <path d="M410 192 L402 211" stroke="#c4d4df" stroke-opacity=".6" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M465 194 L495 207" stroke="#d8e4ec" stroke-opacity=".65" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M339 219 L301 251" stroke="#fff" stroke-opacity=".6" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M514 208 L546 236 L564 242 L550 250 L520 231Z" fill="url(#amBodySide)" stroke="#95000d" stroke-width="2"/>
+          <path d="M523 218 L542 235" stroke="#ffd2d6" stroke-width="2.5" stroke-linecap="round"/>
 
-          <!-- Front fascia, angled to show the bonnet and face together -->
-          <path d="M83 352 L125 323 L240 292 L278 315 L294 354 L278 386 L258 400 L116 409 Q91 405 83 386Z" fill="url(#heroCarFrontPaint)" stroke="#a90010" stroke-width="3" stroke-linejoin="round"/>
-          <path d="M105 350 L135 330 L158 326 L147 348 L109 363Z" fill="#fff0d0" stroke="#ffd0d4" stroke-width="2.5" stroke-linejoin="round"/>
-          <path class="front-headlight" d="M221 315 L253 309 L274 321 L276 335 L247 340 L229 331Z" fill="#fff4d8" stroke="#ffb2ba" stroke-width="2.5" stroke-linejoin="round"/>
-          <path d="M111 349 L137 334" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
-          <path d="M230 318 L255 315 L268 323" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+          <!-- Front fascia sits on a single angled plane -->
+          <path d="M93 331 Q97 310 123 291 L211 264 L254 280
+                   L265 330 L258 372 L207 393 L133 379
+                   Q103 371 95 350 Q91 340 93 331 Z"
+                fill="url(#amBodyFront)" stroke="#aa0010" stroke-width="3" stroke-linejoin="round"/>
+          <!-- Sculpted bonnet plane -->
+          <path d="M123 291 L211 264 L254 280 L220 300 L143 322 L111 329 Z"
+                fill="url(#amBonnet)" stroke="#b00010" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M128 300 L207 272" fill="none" stroke="#ffd0d4" stroke-width="3" stroke-linecap="round" opacity=".85"/>
+          <path d="M148 322 L219 299" fill="none" stroke="#8e000d" stroke-width="2.5" stroke-linecap="round" opacity=".6"/>
 
-          <!-- Front grille and lower air intake -->
-          <path d="M125 361 L214 345 L238 357 L224 380 L132 389 L113 378Z" fill="url(#heroCarGrille)" stroke="#69000a" stroke-width="2.5" stroke-linejoin="round"/>
-          <path d="M132 365 L216 352 M128 371 L229 359 M130 378 L225 366 M138 383 L219 371" fill="none" stroke="#656b72" stroke-width="2" stroke-linecap="round" opacity=".85"/>
-          <path d="M161 359 L184 355 L193 365 L182 377 L159 378 L151 368Z" fill="#e60012" stroke="#ff8d96" stroke-width="2"/>
-          <path d="M166 363 L180 361 L185 366 L178 372 L165 373Z" fill="#ffe5e7" opacity=".9"/>
-          <path d="M111 390 L151 393 L234 384 L259 391 L240 401 L125 407 Q112 405 111 390Z" fill="#71000a" opacity=".75"/>
-          <path d="M132 398 L226 391" stroke="#ff8992" stroke-width="3" stroke-linecap="round"/>
-          <path d="M94 382 L111 386 L117 397 L103 395Z" fill="#3b080d"/>
-          <path d="M94 382 L109 386" stroke="#ffffff" stroke-opacity=".7" stroke-width="2" stroke-linecap="round"/>
+          <!-- Paired front lamps follow the same front-face perspective -->
+          <path class="front-headlight" d="M116 319 L151 299 L177 300 L157 325 L125 334 Z"
+                fill="#fff3d4" stroke="#ffbac0" stroke-width="2.5" stroke-linejoin="round"/>
+          <path d="M122 321 L151 304 L166 303" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+          <path class="front-headlight" d="M204 288 L236 289 L251 302 L230 312 L208 304 Z"
+                fill="#fff0d0" stroke="#ffb7be" stroke-width="2.5" stroke-linejoin="round"/>
+          <path d="M211 292 L235 293 L244 300" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
 
-          <!-- Side character lines, door handle and sill -->
-          <path d="M285 318 Q428 287 576 294" fill="none" stroke="#ffb8be" stroke-opacity=".76" stroke-width="3" stroke-linecap="round"/>
-          <path d="M303 331 Q430 309 560 313" fill="none" stroke="#8e0010" stroke-opacity=".6" stroke-width="3" stroke-linecap="round"/>
-          <path d="M486 321 L519 316" stroke="#ffd7da" stroke-width="4" stroke-linecap="round"/>
-          <path d="M478 327 L521 321" stroke="#85000b" stroke-width="2" stroke-linecap="round"/>
-          <path d="M295 381 Q471 393 714 375" fill="none" stroke="#ff929b" stroke-width="5" stroke-linecap="round" opacity=".82"/>
-          <path d="M304 390 Q500 402 704 385" fill="none" stroke="#70000a" stroke-width="5" stroke-linecap="round" opacity=".68"/>
+          <!-- Wide grille, lower intake and bumper details -->
+          <path d="M126 342 L184 321 L226 324 L239 340 L214 357 L151 365 L127 356 Z"
+                fill="url(#amGrille)" stroke="#73000b" stroke-width="2.5" stroke-linejoin="round"/>
+          <path d="M137 343 L190 329 L223 331 M138 350 L218 338 M151 358 L211 347"
+                fill="none" stroke="#646b73" stroke-width="2.3" stroke-linecap="round" opacity=".8"/>
+          <path d="M174 331 L192 328 L203 337 L191 347 L172 349 L163 340 Z"
+                fill="#d90014" stroke="#ff6874" stroke-width="2"/>
+          <path d="M179 335 L191 333 L197 337 L190 343 L178 344 Z" fill="#ffe5e7"/>
+          <path d="M119 363 L153 371 L222 360 L248 365 L228 379 L142 385 Q125 382 119 363Z"
+                fill="#79000a" opacity=".74"/>
+          <path d="M139 374 L224 365" stroke="#ff7b86" stroke-width="3" stroke-linecap="round"/>
+          <path d="M100 347 L115 352 L121 364 L106 361Z" fill="#4b080e"/>
+          <path d="M105 350 L115 353" stroke="#fff" stroke-opacity=".7" stroke-width="2" stroke-linecap="round"/>
 
-          <!-- Rear lamp and rear fender detail -->
-          <path d="M675 321 Q702 322 723 340 L731 353 L708 355 Q687 346 675 337Z" fill="#ff3447" stroke="#a90010" stroke-width="2"/>
-          <path d="M688 330 Q705 332 718 345" fill="none" stroke="#ffbdc2" stroke-width="3" stroke-linecap="round"/>
-          <path d="M602 293 L659 310" fill="none" stroke="#ffb3b9" stroke-opacity=".55" stroke-width="3" stroke-linecap="round"/>
+          <!-- Side mirror, door, handle and side skirt -->
+          <path d="M529 237 L548 237 L563 250 L545 254 L531 246Z"
+                fill="url(#amBodySide)" stroke="#a90010" stroke-width="2"/>
+          <path d="M536 241 L552 247" stroke="#ffd5d8" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M432 270 L459 267" stroke="#ffdadd" stroke-width="4" stroke-linecap="round"/>
+          <path d="M430 277 L460 274" stroke="#9b000d" stroke-width="2" stroke-linecap="round"/>
+          <path d="M282 374 Q468 389 695 360" fill="none" stroke="#ff929c" stroke-width="4" stroke-linecap="round" opacity=".75"/>
+          <path d="M296 385 Q486 399 680 373" fill="none" stroke="#74000a" stroke-width="5" stroke-linecap="round" opacity=".65"/>
+          <path d="M311 391 L398 393" stroke="#ffbcc1" stroke-width="2" stroke-linecap="round" opacity=".8"/>
+
+          <!-- Rear lamp is placed on the far rear corner -->
+          <path class="rear-light" d="M650 272 Q679 279 698 300 L705 311 L682 309 Q663 294 650 285Z"
+                fill="#ff3a4b" stroke="#af0011" stroke-width="2"/>
+          <path d="M662 282 Q679 288 692 302" fill="none" stroke="#ffccd0" stroke-width="3" stroke-linecap="round"/>
+
+          <!-- Wheel arch trim is drawn before wheels -->
+          <path d="M287 366 Q293 313 340 311 Q383 312 394 372"
+                fill="none" stroke="#85000d" stroke-width="9" stroke-linecap="round"/>
+          <path d="M556 350 Q562 304 604 301 Q647 302 657 358"
+                fill="none" stroke="#87000c" stroke-width="8" stroke-linecap="round"/>
 
           <!-- Front-side alloy wheel -->
-          <g transform="translate(335 375)">
-            <circle r="53" fill="#101114" stroke="#07080a" stroke-width="3"/>
-            <circle r="43" fill="url(#heroCarMetal)" stroke="#7a828b" stroke-width="3"/>
-            <circle r="35" fill="#262b31" stroke="#d0d4d8" stroke-width="3"/>
-            <g class="wheel-spokes" stroke="#dfe3e7" stroke-width="5.5" stroke-linecap="round">
-              <path d="M0 -30 L7 -8 L0 -3 L-7 -8Z" fill="#c8cdd2"/>
-              <path d="M0 30 L7 8 L0 3 L-7 8Z" fill="#c8cdd2"/>
-              <path d="M-30 0 L-8 -7 L-3 0 L-8 7Z" fill="#c8cdd2"/>
-              <path d="M30 0 L8 -7 L3 0 L8 7Z" fill="#c8cdd2"/>
-              <path d="M-22 -22 L-7 -12 L-10 -5 L-17 -8Z" fill="#c8cdd2"/>
-              <path d="M22 22 L7 12 L10 5 L17 8Z" fill="#c8cdd2"/>
-              <path d="M-22 22 L-12 7 L-5 10 L-8 17Z" fill="#c8cdd2"/>
-              <path d="M22 -22 L12 -7 L5 -10 L8 -17Z" fill="#c8cdd2"/>
+          <g transform="translate(341 362)">
+            <circle r="48" fill="#101216" stroke="#07080a" stroke-width="3"/>
+            <circle r="39" fill="url(#amAlloy)" stroke="#737b84" stroke-width="3"/>
+            <circle r="32" fill="#282e35" stroke="#d1d6dc" stroke-width="3"/>
+            <g class="wheel-spokes" stroke="#e4e7eb" stroke-width="5" stroke-linecap="round">
+              <path d="M0 -27 L6 -7 L0 -3 L-6 -7Z" fill="#ced3d8"/>
+              <path d="M0 27 L6 7 L0 3 L-6 7Z" fill="#ced3d8"/>
+              <path d="M-27 0 L-7 -6 L-3 0 L-7 6Z" fill="#ced3d8"/>
+              <path d="M27 0 L7 -6 L3 0 L7 6Z" fill="#ced3d8"/>
+              <path d="M-19 -19 L-6 -11 L-10 -4 L-16 -7Z" fill="#ced3d8"/>
+              <path d="M19 19 L6 11 L10 4 L16 7Z" fill="#ced3d8"/>
+              <path d="M-19 19 L-11 6 L-4 10 L-7 16Z" fill="#ced3d8"/>
+              <path d="M19 -19 L11 -6 L4 -10 L7 -16Z" fill="#ced3d8"/>
             </g>
-            <circle r="13" fill="#e2e5e8" stroke="#747b83" stroke-width="3"/>
-            <circle r="6" fill="#e60012"/>
-            <circle r="3" fill="#ffbec3"/>
-          </g>
-
-          <!-- Rear-side alloy wheel -->
-          <g transform="translate(625 365)">
-            <circle r="52" fill="#101114" stroke="#07080a" stroke-width="3"/>
-            <circle r="42" fill="url(#heroCarMetal)" stroke="#7a828b" stroke-width="3"/>
-            <circle r="34" fill="#262b31" stroke="#d0d4d8" stroke-width="3"/>
-            <g class="wheel-spokes" stroke="#dfe3e7" stroke-width="5" stroke-linecap="round">
-              <path d="M0 -29 L7 -8 L0 -3 L-7 -8Z" fill="#c8cdd2"/>
-              <path d="M0 29 L7 8 L0 3 L-7 8Z" fill="#c8cdd2"/>
-              <path d="M-29 0 L-8 -7 L-3 0 L-8 7Z" fill="#c8cdd2"/>
-              <path d="M29 0 L8 -7 L3 0 L8 7Z" fill="#c8cdd2"/>
-              <path d="M-21 -21 L-7 -12 L-10 -5 L-17 -8Z" fill="#c8cdd2"/>
-              <path d="M21 21 L7 12 L10 5 L17 8Z" fill="#c8cdd2"/>
-              <path d="M-21 21 L-12 7 L-5 10 L-8 17Z" fill="#c8cdd2"/>
-              <path d="M21 -21 L12 -7 L5 -10 L8 -17Z" fill="#c8cdd2"/>
-            </g>
-            <circle r="12" fill="#e2e5e8" stroke="#747b83" stroke-width="3"/>
+            <circle r="11" fill="#e0e4e8" stroke="#747c85" stroke-width="2.5"/>
             <circle r="5.5" fill="#e60012"/>
-            <circle r="2.5" fill="#ffbec3"/>
           </g>
 
-          <!-- Wheel arches and final reflective accents -->
-          <path d="M282 376 Q288 323 335 322 Q379 322 388 377" fill="none" stroke="#a60010" stroke-width="7" stroke-linecap="round"/>
-          <path d="M574 367 Q580 315 625 315 Q671 315 678 367" fill="none" stroke="#9b000e" stroke-width="7" stroke-linecap="round"/>
-          <path d="M290 378 Q296 332 335 331 Q371 331 380 378" fill="none" stroke="#ff8993" stroke-opacity=".8" stroke-width="2.5" stroke-linecap="round"/>
-          <path d="M582 368 Q589 326 625 325 Q661 325 669 368" fill="none" stroke="#ff8993" stroke-opacity=".72" stroke-width="2.5" stroke-linecap="round"/>
-          <path d="M171 414 H272 M409 414 H548 M663 407 H718" stroke="#ff5865" stroke-width="2.5" stroke-linecap="round" opacity=".75"/>
+          <!-- Rear-side alloy wheel: slightly smaller due to perspective -->
+          <g transform="translate(604 343)">
+            <circle r="42" fill="#101216" stroke="#07080a" stroke-width="3"/>
+            <circle r="34" fill="url(#amAlloy)" stroke="#737b84" stroke-width="2.5"/>
+            <circle r="27" fill="#282e35" stroke="#d1d6dc" stroke-width="2.5"/>
+            <g class="wheel-spokes" stroke="#e4e7eb" stroke-width="4.5" stroke-linecap="round">
+              <path d="M0 -23 L5 -6 L0 -2 L-5 -6Z" fill="#ced3d8"/>
+              <path d="M0 23 L5 6 L0 2 L-5 6Z" fill="#ced3d8"/>
+              <path d="M-23 0 L-6 -5 L-2 0 L-6 5Z" fill="#ced3d8"/>
+              <path d="M23 0 L6 -5 L2 0 L6 5Z" fill="#ced3d8"/>
+              <path d="M-16 -16 L-5 -9 L-8 -3 L-13 -6Z" fill="#ced3d8"/>
+              <path d="M16 16 L5 9 L8 3 L13 6Z" fill="#ced3d8"/>
+              <path d="M-16 16 L-9 5 L-3 8 L-6 13Z" fill="#ced3d8"/>
+              <path d="M16 -16 L9 -5 L3 -8 L6 -13Z" fill="#ced3d8"/>
+            </g>
+            <circle r="10" fill="#e0e4e8" stroke="#747c85" stroke-width="2.5"/>
+            <circle r="5" fill="#e60012"/>
+          </g>
+
+          <!-- Final highlights and front bumper edge -->
+          <path d="M290 369 Q298 322 341 321 Q378 322 385 369"
+                fill="none" stroke="#ff9aa2" stroke-width="2.5" stroke-linecap="round" opacity=".8"/>
+          <path d="M564 348 Q570 312 604 311 Q637 312 649 350"
+                fill="none" stroke="#ff8f99" stroke-width="2.5" stroke-linecap="round" opacity=".72"/>
+          <path d="M104 372 Q113 391 139 395" fill="none" stroke="#ff9ca4" stroke-width="3" stroke-linecap="round" opacity=".8"/>
         </svg>
         <div class="floating-chip chip-top"><span class="chip-icon">↗</span><span><strong>Make your next move</strong><small>Get clear on the process</small></span></div>
         <div class="floating-chip chip-bottom"><span class="chip-icon">✦</span><span><strong>Guidance before you apply</strong><small>Know what to prepare</small></span></div>
