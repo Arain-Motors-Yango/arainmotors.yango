@@ -329,6 +329,46 @@
     @media(max-width:620px){
       .hero-scene .hero-yango-wordmark{top:23% !important;color:#ff0018 !important}
     }
+
+    /* Keep both hero guidance cards in one aligned row beneath the car */
+    .hero-scene .floating-chip.chip-top,
+    .hero-scene .floating-chip.chip-bottom{
+      top:auto !important;
+      bottom:2px !important;
+      width:min(270px,calc(50% - 18px));
+      min-height:76px;
+      box-sizing:border-box;
+    }
+    .hero-scene .floating-chip.chip-top{
+      left:auto !important;
+      right:calc(50% + 9px) !important;
+      transform:rotate(-2deg);
+    }
+    .hero-scene .floating-chip.chip-bottom{
+      left:calc(50% + 9px) !important;
+      right:auto !important;
+      transform:rotate(2deg);
+    }
+    @media(max-width:950px){
+      .hero-scene .floating-chip.chip-top,
+      .hero-scene .floating-chip.chip-bottom{bottom:2px !important}
+    }
+    @media(max-width:620px){
+      .hero-scene .floating-chip.chip-top,
+      .hero-scene .floating-chip.chip-bottom{
+        bottom:0 !important;
+        width:calc(50% - 7px);
+        min-height:72px;
+        padding:8px 7px;
+        gap:6px;
+        border-radius:13px;
+      }
+      .hero-scene .floating-chip.chip-top{right:auto !important;left:3px !important;transform:rotate(-1deg)}
+      .hero-scene .floating-chip.chip-bottom{left:auto !important;right:3px !important;transform:rotate(1deg)}
+      .hero-scene .floating-chip .chip-icon{width:27px;height:27px;min-width:27px;border-radius:9px;font-size:.88rem}
+      .hero-scene .floating-chip strong{font-size:.63rem;line-height:1.18}
+      .hero-scene .floating-chip small{font-size:.56rem;line-height:1.2}
+    }
 </style>
 </head>
 <body>
