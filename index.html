@@ -315,6 +315,20 @@
   @keyframes siteWaPulse{0%,100%{box-shadow:0 10px 26px #128c4b38,0 0 0 0 #25d3664d}50%{box-shadow:0 12px 30px #128c4b42,0 0 0 8px #25d36600}}
   @media(max-width:620px){.whatsapp-float{right:16px;bottom:calc(78px + env(safe-area-inset-bottom));width:54px;height:54px}.whatsapp-float svg{width:28px;height:28px}.whatsapp-float .wa-tooltip{display:none}}
   @media(prefers-reduced-motion:reduce){.whatsapp-float{animation:none;transition:none}.whatsapp-float .wa-tooltip{transition:none}}
+
+    /* Final hero wordmark adjustment: brighter red and a little higher */
+    .hero-scene .hero-yango-wordmark{
+      top:26% !important;
+      color:#ff0018 !important;
+      opacity:.92 !important;
+      text-shadow:0 3px 0 #cf0014,0 10px 24px #e6001238,0 0 34px #ff00184a !important;
+    }
+    @media(max-width:950px){
+      .hero-scene .hero-yango-wordmark{top:23% !important}
+    }
+    @media(max-width:620px){
+      .hero-scene .hero-yango-wordmark{top:23% !important;color:#ff0018 !important}
+    }
 </style>
 </head>
 <body>
