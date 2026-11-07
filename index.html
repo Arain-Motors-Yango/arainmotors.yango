@@ -76,9 +76,8 @@
     .hero-pills span{display:inline-flex;align-items:center;gap:7px;padding:9px 12px;border:1px solid #f0ddde;background:#ffffffc9;border-radius:999px;color:#666;font-size:.79rem;font-weight:750}
     .hero-pills b{width:7px;height:7px;border-radius:50%;background:#e60012;display:inline-block}
     .hero-scene{height:520px;min-width:0;position:relative;display:grid;place-items:center;perspective:1000px;isolation:isolate;--mx:0;--my:0}
-    .hero-yango-wordmark{position:absolute;z-index:0;left:50%;top:47%;white-space:nowrap;pointer-events:none;user-select:none;font-size:clamp(6rem,10.8vw,9.8rem);line-height:.82;font-weight:1000;font-style:italic;letter-spacing:-.105em;padding-right:.11em;color:transparent;background:linear-gradient(105deg,#aa0010 0%,#e60012 27%,#ff5260 48%,#c90012 69%,#97000d 100%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;filter:drop-shadow(0 14px 25px #e6001226);opacity:.17;transform:translate(-50%,-50%) skewX(-13deg);animation:yangoWordPulse 5.2s ease-in-out infinite,yangoWordSweep 9s linear infinite}
-    @keyframes yangoWordPulse{0%,100%{opacity:.13;transform:translate(-50%,-50%) skewX(-13deg) scale(.985);filter:drop-shadow(0 10px 18px #e6001214)}50%{opacity:.25;transform:translate(-50%,-50%) skewX(-13deg) scale(1.025);filter:drop-shadow(0 18px 32px #e6001238)}}
-    @keyframes yangoWordSweep{0%{background-position:180% 0}100%{background-position:-180% 0}}
+    .hero-yango-wordmark{position:absolute;z-index:1;left:50%;top:34%;white-space:nowrap;pointer-events:none;user-select:none;font-family:Arial Black,Inter,ui-sans-serif,sans-serif;font-size:clamp(7.5rem,12vw,10.8rem);line-height:.8;font-weight:1000;font-style:italic;letter-spacing:-.105em;padding-right:.12em;color:#a60010;text-shadow:0 5px 0 #79000b,0 13px 26px #8f001d55,0 0 34px #e600123b;opacity:.68;transform:translate(-50%,-50%) skewX(-13deg);animation:yangoWordPulse 4.6s ease-in-out infinite}
+    @keyframes yangoWordPulse{0%,100%{opacity:.57;transform:translate(-50%,-50%) skewX(-13deg) scale(.985);text-shadow:0 5px 0 #79000b,0 10px 22px #8f001d42,0 0 25px #e600122b}50%{opacity:.82;transform:translate(-50%,-50%) skewX(-13deg) scale(1.035);text-shadow:0 6px 0 #79000b,0 18px 34px #8f001d66,0 0 42px #e6001255}}
     .brand-yango-lockup{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:0;white-space:nowrap;line-height:1}
     .brand-yango-word{display:block;color:#e60012;font-size:1.46rem;font-weight:1000;font-style:italic;letter-spacing:-.09em;transform:skewX(-12deg);text-shadow:0 3px 10px #e600121c}
     .brand-yango-lockup small{display:block;margin-top:5px;color:#777;font-size:.49rem;font-weight:850;letter-spacing:.14em}
@@ -276,7 +275,7 @@
     .footer-top .brand>.brand-logo{width:170px;height:73px;max-height:73px;object-fit:contain}
     @media(max-width:850px){header .brand{gap:9px!important}header .brand>.brand-logo{width:128px;height:62px;max-height:62px}.brand-yango-word{font-size:1.3rem}}
     @media(max-width:620px){header .brand{gap:7px!important}header .brand>.brand-logo{width:96px;height:48px;max-height:48px}header .brand>.brand-divider{height:28px}.brand-yango-word{font-size:1.08rem}.brand-yango-lockup small{font-size:.39rem;margin-top:4px}.footer-top .brand>.brand-logo{width:145px;height:62px;max-height:62px}}
-    @media(max-width:620px){.hero-yango-wordmark{font-size:clamp(4.6rem,18vw,6rem);top:46%;opacity:.16}.hero-scene{height:310px}}
+    @media(max-width:950px){.hero-yango-wordmark{font-size:clamp(6.2rem,15vw,9rem);top:34%;opacity:.72}}\n    @media(max-width:620px){.hero-yango-wordmark{font-size:clamp(4.8rem,19vw,6.6rem);top:35%;opacity:.76;letter-spacing:-.11em}.hero-scene{height:310px}}
 
   </style>
 
