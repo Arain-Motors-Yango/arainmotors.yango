@@ -198,14 +198,14 @@
 <section class="soft-section" id="join">
     <div class="wrap join-grid">
       <div class="join-aside">
-        <div class="kicker">Rider registration</div><h1>Let's start your next journey.</h1><p>Interested in joining? Fill out this short form and prepare an email enquiry to Arain Motors. Please don't include sensitive document numbers or upload identity documents at this stage.</p>
-        <div class="contact-note"><strong>Need to ask something else?</strong><br>Use the <a href="contact.html#contact-form"><u>Contact form</u></a> for other questions.</div>
+        <div class="kicker">Yango rider registration</div><h1>Start your journey with Yango.</h1><p>Ready to get on the road with Yango? Complete the form below and our registration team will contact you to guide you through the next steps.</p>
+        <div class="contact-note"><strong>Need assistance?</strong><br>Our team is here to help you move forward with your Yango rider registration. <a href="contact.html#contact-form"><u>Contact our team</u></a>.</div>
       </div>
       <div class="form-card">
-        <h3>Rider interest form</h3><p>Fields marked * are required. Submit this form securely to send your enquiry to the Arain Motors inbox.</p>
+        <h3>Rider registration form</h3><p>Complete your details below. Our registration team will be in touch to discuss the next steps and assist you with the process.</p>
         <form id="riderForm">
           <input type="hidden" name="access_key" value="c691997a-c263-414b-94be-20ae3e28cbc7">
-          <input type="hidden" name="subject" value="New Join Application Submitted — Arain Motors">
+          <input type="hidden" name="subject" value="New Yango Rider Registration Request — Arain Motors">
           <input type="hidden" name="from_name" value="Arain Motors Website">
           <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none;">
           <div class="form-grid">
@@ -218,9 +218,9 @@
             <div class="field"><label for="experience">Driving experience</label><select id="experience" name="experience"><option value="">Select an option</option><option>Less than 1 year</option><option>1–3 years</option><option>3+ years</option><option>Prefer to discuss</option></select></div>
             <div class="field"><label for="contactTime">Preferred contact method</label><select id="contactTime" name="contactTime"><option>Email or phone</option><option>Phone call</option><option>Email</option><option>WhatsApp, if available</option></select></div>
             <div class="field full"><label for="message">Questions or additional information</label><textarea id="message" name="message" maxlength="1000" placeholder="Tell us what you'd like to know (optional)"></textarea></div>
-            <div class="field full"><label><input type="checkbox" id="consent" name="consent" value="Yes" required style="width:auto;margin-right:8px">I agree that Arain Motors may use these details to respond to my enquiry. *</label></div>
+            <div class="field full"><label><input type="checkbox" id="consent" name="consent" value="Yes" required style="width:auto;margin-right:8px">I agree that Arain Motors may contact me regarding my Yango rider registration. *</label></div>
           </div>
-          <div class="form-foot"><button class="btn" id="submitBtn" type="submit">Send my application <span aria-hidden="true">↗</span></button><small>Your details will be sent through Web3Forms to the email address configured for this access key. Please do not submit identity-document numbers or other sensitive information.</small><div class="status" id="formStatus" role="status" aria-live="polite"></div></div>
+          <div class="form-foot"><button class="btn" id="submitBtn" type="submit">Submit registration request <span aria-hidden="true">↗</span></button><small>By submitting, you request to be contacted by our registration team about the next steps for joining Yango.</small><div class="status" id="formStatus" role="status" aria-live="polite"></div></div>
         </form>
       </div>
     </div>
@@ -239,7 +239,7 @@ const menuBtn=document.getElementById('menuBtn'),navLinks=document.getElementByI
 if(menuBtn&&navLinks){menuBtn.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));menuBtn.textContent=open?'✕':'☰';});navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.textContent='☰';}));}
 const year=document.getElementById('year');if(year)year.textContent=new Date().getFullYear();
 const riderForm=document.getElementById('riderForm');
-if(riderForm)riderForm.addEventListener('submit',async function(e){e.preventDefault();if(!this.reportValidity())return;const form=this,submitBtn=document.getElementById('submitBtn'),status=document.getElementById('formStatus'),originalLabel=submitBtn.innerHTML;status.style.display='block';status.textContent='Sending your application securely…';submitBtn.disabled=true;submitBtn.style.opacity='.65';submitBtn.setAttribute('aria-busy','true');try{const response=await fetch('https://api.web3forms.com/submit',{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}});const result=await response.json();if(response.ok&&result.success){status.textContent='Thank you! Your enquiry has been sent successfully. Arain Motors can now review your details.';status.style.background='#e7f7e9';form.reset();}else{throw new Error(result.message||'The form service could not accept your submission.');}}catch(error){status.textContent='We could not send your enquiry right now. Please try again in a little while.';status.style.background='#fff0e8';}finally{submitBtn.disabled=false;submitBtn.style.opacity='';submitBtn.removeAttribute('aria-busy');submitBtn.innerHTML=originalLabel;}});
+if(riderForm)riderForm.addEventListener('submit',async function(e){e.preventDefault();if(!this.reportValidity())return;const form=this,submitBtn=document.getElementById('submitBtn'),status=document.getElementById('formStatus'),originalLabel=submitBtn.innerHTML;status.style.display='block';status.textContent='Sending your application securely…';submitBtn.disabled=true;submitBtn.style.opacity='.65';submitBtn.setAttribute('aria-busy','true');try{const response=await fetch('https://api.web3forms.com/submit',{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}});const result=await response.json();if(response.ok&&result.success){status.textContent='Thank you! Your registration request has been received. Our team will contact you to guide you through the next steps.';status.style.background='#e7f7e9';form.reset();}else{throw new Error(result.message||'The form service could not accept your submission.');}}catch(error){status.textContent='We could not send your enquiry right now. Please try again in a little while.';status.style.background='#fff0e8';}finally{submitBtn.disabled=false;submitBtn.style.opacity='';submitBtn.removeAttribute('aria-busy');submitBtn.innerHTML=originalLabel;}});
 </script>
 <a class="mobile-join-cta" href="#riderForm" aria-label="Join as a rider — open rider application"><span class="join-arrow" aria-hidden="true">↗</span><span>Join as a rider</span><span class="join-arrow" aria-hidden="true">→</span></a>
 
