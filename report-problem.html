@@ -134,7 +134,7 @@
       <div class="kicker">Website support</div>
       <h1>Something not working right?</h1>
       <p>Tell us what happened. Whether a page looks wrong, a link is broken, a form will not submit or you spot incorrect information, send a report and our team can investigate.</p>
-      <div class="contact-note"><strong>Helpful details</strong><br>Tell us which page you were on, what you clicked and what happened next. Please do not include passwords, one-time codes, bank details or identity-document numbers.</div>
+      <div class="contact-note"><strong>Helpful details</strong><br>Tell us which page you were on, what you clicked and what happened next. For your security, keep passwords, one-time codes and banking credentials private.</div>
       <div class="contact-note"><strong>Need help with another question?</strong><br>Use the <a href="contact.html#contact-form"><u>Contact form</u></a> for general enquiries.</div>
     </div>
     <div class="form-card">
@@ -148,8 +148,12 @@
         <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none;">
         <div class="form-grid">
           <div class="field">
-            <label for="reporterName">Your name</label>
-            <input id="reporterName" name="reporter_name" autocomplete="name" maxlength="100" placeholder="Your name (optional)">
+            <label for="reporterName">Full name *</label>
+            <input id="reporterName" name="reporter_name" autocomplete="name" maxlength="100" required placeholder="Enter your full name">
+          </div>
+          <div class="field">
+            <label for="reporterPhone">Mobile number *</label>
+            <input id="reporterPhone" name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="30" required placeholder="e.g. 03XX XXXXXXX">
           </div>
           <div class="field">
             <label for="reporterEmail">Email address *</label>
@@ -202,7 +206,7 @@
         </div>
         <div class="form-foot">
           <button class="btn" id="submitBtn" type="submit">Send problem report <span aria-hidden="true">↗</span></button>
-          <small>Your report will be sent to the Arain Motors support inbox. Please do not include passwords, payment information, one-time codes or sensitive identity details.</small>
+          <small>Your report will be reviewed by the Arain Motors team. We may contact you using the details provided if we need more information.</small>
           <div class="status" id="formStatus" role="status" aria-live="polite"></div>
         </div>
       </form>
