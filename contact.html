@@ -302,10 +302,8 @@
         const response=await fetch('https://api.web3forms.com/submit',{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}});
         const result=await response.json();
         if(response.ok&&result.success){
-          status.className='form-status visible success';
-          status.textContent='Thank you — your request has been submitted successfully. Your selected topic has been included with your message.';
-          form.reset();updatePurpose();
-          status.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'nearest'});
+          window.location.assign('thank-you.html');
+          return;
         }else{throw new Error(result.message||'The form service could not accept your submission.');}
       }catch(error){
         status.className='form-status visible error';
